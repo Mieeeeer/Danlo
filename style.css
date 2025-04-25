@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    max-width: 1950px;
+    margin: 0 auto;
+    padding: 0; 
+}
+
+header {
+    background-color: #931515;
+    color: white;
+    padding: 1rem;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 40px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #EB0000;
+    padding: 0.3rem;
+}
+
+nav a, .login-btn {
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    font-size: 20px;
+}
+
+.login-btn {
+    background-color: #EB0000;
+    border-style: solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+nav ul :hover {
+    color: #FFAE00;
+}
+
+main {
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}  
+
+footer {
+    background-color: #8c0000;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+
+.footer-info p{
+    margin-left: 25rem;
+    margin-top: -13.5rem;
+}
+
+footer a{
+    color: white;
+}
+
+footer img {
+    max-width: 250px;
+    height: auto;
+    margin-left: 6rem;
+}
+
+.Copyright p{
+    position: relative;
+    margin-top: 7rem;
+    margin-left: 40rem;
+    font-size: 18px;
+}
+
+.about-page h2{
+    color: #E31818;
+    font-size: 30px;
+    margin-top: 3rem;
+}
+
+.about-page h3{
+    color: white;
+    background-color: #EB0000;
+    padding-left: 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 1800px;
+    display: block;
+    margin: 1rem auto;
+}
+
+.history {
+    margin-top: 2rem;
+}
+
+.mission-vision .mv-section {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    max-width: 600px;
+}
+
+.card img {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 3rem;
+}
+
+.org-chart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #E31818;
+    font-size: 25px;
+}
+
+.org-chart img{
+    width: 100%;
+    max-width: 1800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.announcement{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.announcement h1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #E31818;
+    font-size: 40px;
+}
+
+.updates-announcements .ua-section {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card2 {
+    flex: 1;
+    min-width: 100px;
+    max-width: 600px;
+}
+
+.card2 img {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 3rem;
+}
+
+.calendar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.calendar-dates {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+  }
+  
+  .calendar-card {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: 532px;
+    height: 550px;
+  }
+  
+  .calendar-card .month {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 3.5rem;
+  }
+  
+  .calendar-card .day {
+    background-color: #991b1b;
+    color: white;
+    font-size: 15rem;
+    font-weight: bold;
+  }
+  
+  .calendar-card .label {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #333;
+    font-size: 2.5rem;
+  }
+  
+
+
