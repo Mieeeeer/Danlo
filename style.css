@@ -176,19 +176,6 @@ footer img {
     font-size: 40px;
 }
 
-.updates-announcements .ua-section {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card2 {
-    flex: 1;
-    min-width: 100px;
-    max-width: 600px;
-}
-
 .card2 img {
     width: 100%;
     border: 1px solid #ccc;
@@ -408,3 +395,72 @@ footer img {
 .home-page .container{
     max-width: 1950px;
 }
+
+.ua-section {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    max-width: 1700px;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 500px;
+    height: auto;
+    margin-right: 20px;
+    display: block;
+  }
+
+  .slide iframe {
+    width: 500px;
+    height: 400px;
+    gap: 1rem;
+    display: block;
+}
+
+.slider-container iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+.arrow {
+    background-color: rgba(255, 0, 0, 0.7);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
+.slider-container {
+    position: relative;
+}
+
+.arrow:hover {
+    transform: translateY(-50%) scale(1.2);
+}
+
+
+
+
+  
