@@ -209,34 +209,202 @@ footer img {
     margin-bottom: 10rem;
   }
   
-  .calendar-card {
+.calendar-card {
     text-align: center;
     font-family: Arial, sans-serif;
     width: 532px;
     height: 550px;
-  }
+}
   
-  .calendar-card .month {
+.calendar-card .month {
     background-color: black;
     color: white;
     padding: 0.5rem;
     font-weight: bold;
     font-size: 3.5rem;
-  }
+}
   
-  .calendar-card .day {
+.calendar-card .day {
     background-color: #991b1b;
     color: white;
     font-size: 15rem;
     font-weight: bold;
-  }
+}
   
-  .calendar-card .label {
+.calendar-card .label {
     margin-top: 0.5rem;
     font-weight: bold;
     color: #333;
     font-size: 2.5rem;
-  }
+}
   
+.contacts-page h2{
+    color: #E31818;
+    font-size: 60px;
+    margin-top: 3rem;
+}
+
+.contacts .sta-ana {
+    background: linear-gradient(to right, #931515 0%, #FFAE00 50%, #EB0000 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.contacts p {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.number{
+    margin-top: 1rem;
+}
+
+.email a{
+    color: black;
+}
+
+.contacts{
+    margin-bottom: 5rem;
+}
+
+.social-links p{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.social-links .facebook img{
+    height: 55px;
+    width: 55px;
+    margin-left: 2px;
+}
+
+.social-links .instagram img{
+    height: 60px;
+    width: 60px;
+}
+
+.social-links .x img{
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+}
+
+.social-links .youtube img{
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+}
+
+.social-links a{
+    color: black;
+    margin-left: 2rem;
+}
+
+.social-links .instagram a{
+    margin-left: 1.8rem;
+}
+
+.maps{
+    margin-top: -37rem;
+    margin-left: 50rem;
+}
+
+.contact-us{
+    background-color: transparent;
+    color: black;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ratio {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 ;
+}  
+
+.background-overlay {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.background-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    z-index: 2;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 10%; 
+    transform: translateY(-50%); 
+    z-index: 3; 
+    color: #E31818; 
+    font-size: 3rem; 
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.text-overlay .subtext {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: normal;
+}
+
+.background-overlay {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index: 4;
+}
 
 
+.overlay-image {
+    width: 700px;
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.home-page .container{
+    max-width: 1950px;
+}
