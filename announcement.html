@@ -8,6 +8,52 @@
         </head>
 
         <body class="announcement-page">
+
+            <script>
+
+                let currentSlide = 0;
+            
+                function showSlide(index) {
+                    const slider = document.querySelector('.slider');
+                    const slide = document.querySelector('.slide');
+                    const slideStyle = getComputedStyle(slide);
+                    const slideWidth = slide.clientWidth 
+                                     + parseFloat(slideStyle.marginLeft) 
+                                     + parseFloat(slideStyle.marginRight);
+            
+                    slider.style.transform = `translateX(${-index * slideWidth}px)`;
+                }
+            
+                function nextSlide() {
+                    const totalSlides = document.querySelectorAll('.slide').length;
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    showSlide(currentSlide);
+                }
+            
+                function prevSlide() {
+                    const totalSlides = document.querySelectorAll('.slide').length;
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    showSlide(currentSlide);
+                }
+            
+                function updateSliderWidth() {
+                    const slideCount = document.querySelectorAll('.slide').length;
+                    const slide = document.querySelector('.slide');
+                    const slideStyle = getComputedStyle(slide);
+                    const slideWidth = slide.clientWidth 
+                                     + parseFloat(slideStyle.marginLeft) 
+                                     + parseFloat(slideStyle.marginRight);
+            
+                    const slider = document.querySelector('.slider');
+                    slider.style.width = `${slideCount * slideWidth}px`;
+                }
+
+                window.onload = updateSliderWidth;
+                window.addEventListener('resize', updateSliderWidth);
+
+            </script>
+            
+
             <header>
                 <div class="logo-section">
                     <img src="images/Sta. Ana Elem logo.png" alt="School Logo" class="logo" />
@@ -35,10 +81,57 @@
                         <h1><br>SACES UPDATES<br><br></h1>
 
                         <div class="ua-section">
-                            <div class="card2"><img src="images/announcement 1.png" alt="World Hearing Day" /></div>
-                            <div class="card2"><img src="images/announcement 2.png" alt="Graduating Class Parent's Meeting" /></div>
-                            <div class="card2"><img src="images/announcement 3.png" alt="SACES Proper Uniform" /></div>
-                            <div class="card2"><img src="images/announcement 4.png" alt="SACES Enrollment Update for SY 2024-2025" /></div>
+                            <div class="slider-container">   
+                                
+                                <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+                                <div class="slider">
+                                    <div class="slide">
+                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsacesdvo%2Fposts%2Fpfbid0ZJqGy1ip4VYdKubA2yN1vpYANxfydXMfxP1WrC2SJieqwbQWCdAttxhbagsvs53bl&show_text=true&width=500" 
+                                                width="500" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                        </iframe>
+                                    </div>
+        
+                                    <div class="slide">
+                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsacesdvo%2Fposts%2Fpfbid02XUa42bTwKn7zTmddmT58wvHHWTTvSZdSBrAD1JwMYVXUcgePSfn9aErMgCatgtAkl&show_text=true&width=500" 
+                                                width="500" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                        </iframe>
+                                    </div>
+        
+                                    <div class="slide">
+                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsacesdvo%2Fposts%2Fpfbid0VK68exB44ZNCoyRHhp8QhYjM1ptNSUFUToqWKTYYAUKWrn3P2K22tVC1aGs6Minnl&show_text=true&width=500" 
+                                                width="500" height="646" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                        </iframe>
+                                    </div>
+        
+                                    <div class="slide">
+                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsacesdvo%2Fposts%2Fpfbid02ZGyXzLzUrCJKLL3TXs3W2v12pTWmbp6UPii3SuJgtYLnv3PS9hz8HXiY4VFyfmJDl&show_text=true&width=500" 
+                                                width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                        </iframe>
+                                    </div>
+        
+                                    <div class="slide">
+                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsacesdvo%2Fposts%2Fpfbid02irxsr8M7B7mN3EQPc9eQDVgKw71TTvRnmw1cAxqut9AscvtSgn3tjWQiGSegdaM9l&show_text=true&width=500" 
+                                                width="500" height="684" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                        </iframe>
+                                    </div>
+        
+                                    <div class="slide">
+                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsacesdvo%2Fposts%2Fpfbid0Xn3ZK1UwTQiC8QttGMG4v12yzPYU4ghpf7ok6M3L82KDvEDvypt6sosqAUAaCEYGl&show_text=true&width=500" 
+                                                width="500" height="608" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                        </iframe>
+                                    </div>
+        
+                                    <div class="slide">
+                                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsacesdvo%2Fposts%2Fpfbid0eDeqKa53FUi2rgFPSw35YRCH9Kkvzd677uaRYvG4xjjfh1Ptp6im3j6RGZwhD2r7l&show_text=true&width=500" 
+                                                width="500" height="667" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                        </iframe>
+                                    </div>
+                                </div>
+
+                                <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+                                
+                            </div>
                         </div>
 
                         <br> <br> <br> <hr width="100%" size="2" color="#EB0000"> <br> <br>
