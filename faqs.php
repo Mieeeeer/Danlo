@@ -17,15 +17,15 @@
 
             <nav>
                 <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="org chart.html">Organizational Chart</a></li>
-                    <li><a href="programs.html">Programs Offered</a></li>
-                    <li><a href="admission.html">Admission</a></li>
-                    <li><a href="announcement.html">Announcement</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="contacts.html">Contact Us</a></li>
-                    <li><a href="login.html" class="login-btn">Login</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="org chart.php">Organizational Chart</a></li>
+                    <li><a href="programs.php">Programs Offered</a></li>
+                    <li><a href="admission.php">Admission</a></li>
+                    <li><a href="announcement.php">Announcement</a></li>
+                    <li><a href="faqs.php">FAQs</a></li>
+                    <li><a href="contacts.php">Contact Us</a></li>
+                    <li><a href="login.php" class="login-btn">Login</a></li>
                 </ul>
             </nav>
 
