@@ -1,45 +1,45 @@
 <?php
-$firstname = $_POST['firstname'] ?? null;
-$lastname = $_POST['lastname'] ?? null;
-$email = $_POST['email'] ?? null;
-$lrn = $_POST['lrn'] ?? null;
-$password = $_POST['Password_Hash'] ?? null;
-
 // Create connection
 $conn = new mysqli('localhost', 'root', '', 'school_portal');
+
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: {$conn->connect_error}");
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $lrn = $conn->real_escape_string($_POST['lrn']);
-    $password = $conn->real_escape_string($_POST['Password_Hash']);
+    $lrn = $_POST['lrn'] ?? '';
+    $password = $_POST['password'] ?? '';
 
-    $sql = "SELECT * FROM students WHERE lrn = '$lrn' AND password = '$Password_Hash'";
-    $result = $conn->query($sql);
+    // Use prepared statement to avoid SQL injection
+    $stmt = $conn->prepare("SELECT * FROM student WHERE LRN = ? AND Password_Hash = ?");
+    $stmt->bind_param("is", $lrn, $password);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
         echo "Login successful!";
+        // You can also redirect or start a session here
     } else {
         echo "Invalid LRN or password.";
     }
-}
 
+    $stmt->close();
+}
 ?>
 
 
-<doctype! html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Login </title>
+    <title>Login</title>
     <link rel="stylesheet" href="login_style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-         <div class="wrapper">
+    <div class="wrapper">
         <form action="login.php" method="POST">
             <img src="images/Sta. Ana Elem logo.png" alt="School Logo" class="logo" />
             <h1>Login</h1>
@@ -60,6 +60,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <p>Don't have an account? <a href="#">Register</a></p>
             </div>
         </form>
-     </div>
+    </div>
 </body>
 </html>
