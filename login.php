@@ -19,7 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         echo "Login successful!";
-        // You can also redirect or start a session here
+    session_start();
+    $_SESSION['lrn'] = $lrn;
+    header("Location: LoginPage.php");
+    exit();
     } else {
         echo "Invalid LRN or password.";
     }
