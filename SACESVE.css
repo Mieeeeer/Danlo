@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    padding: 0; 
+}
+
+header, footer {
+    width: 100%;
+}
+
+
+header {
+    background-color: #870000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.header-content, .footer-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-navbar-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 40px;
+}
+
+.navbar-right-side {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 40px;
+}
+
+.school-logo {
+    width: 50px;
+}
+
+.light-mode {
+    width: 50px;
+    margin-top: 10px;
+    transition: transform 0.2s ease;
+}
+
+.light-mode:hover {
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+
+.notification-icon {
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.notification-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+} 
+
+.separator {
+    height: 40px;
+    width: 1px;  
+    background-color: #ccc; 
+    margin: 0 0px; 
+}
+
+.message-icon {
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.message-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.logout-button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.logout-button:hover {
+    border-color: #eb0000;
+    color: #eb0000;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #EB0000;
+}
+
+.navbar a.active {
+    color: #FFAE00;
+}
+ /* CSS for the Profile Page */
+main {
+    padding: 2rem;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+.profile-picture img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.personal-info, .academic-info {
+    border: 1px solid black;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.edit-profile {
+    margin-top: 19px;
+    font-size: 15px;
+    float: right;
+    color: #870000;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.edit-profile:hover {
+    transform: scale(1.05);
+    color: #eb0000;
+}
+
+.info-container h3 {
+    font-size: 32px;
+}
+
+.info-container p {
+    margin-bottom: 15px;
+}
+
+.info-container .weak {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.info-container strong {
+    font-size: 15px;
+    font-weight: 540;
+}
+
+/* End of Profile Page CSS */
+
+/* CSS for the Edit User Page */
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2rem;
+    padding-left: 13rem;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.profile-header img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.profile-header h2 {
+    font-size: 36px;
+}
+
+.edit-info-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.edit-info-container section {
+    background: none;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.edit-info-container h3 {
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: flex;
+    align-items: left;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    flex: 1;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="file"] {
+    width: 70%;
+    padding: 0.5rem;
+    margin-left: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.user-picture {
+    margin-left: -1px;
+}
+
+.user-picture h3 {
+    margin-bottom: 60px;
+}
+
+.user-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: #ddd;
+    margin-top: -35px;
+    margin-right: 20rem;
+
+}
+
+.user-picture .form-group {
+    margin-top: 2.5rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.update-btn {
+    background-color: #660000;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: #660000;
+    padding: 0.7rem 1.5rem;
+    border: 2px solid #660000;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.update-btn:hover {
+    background-color: #eb0000;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.cancel-btn:hover {
+    color: #eb0000;
+    border-color: #eb0000;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* End of CSS for Edit User Page */
+
+/* CSS for the Subjects Page */
+.subject-page {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.welcome-message {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.welcome-message h2{
+    margin-left: -40px;
+}
+
+.welcome-message p {
+    font-weight: 600;
+}
+
+.subject-header h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.subject-header p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.subject-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.status-filter,
+.sort-filter {
+    padding: 8.19px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    color: #333;
+    appearance: none;
+    background-image: url(images/drop-down.png);
+    background-repeat: no-repeat;
+    background-size: 28px;
+    transition: background-image 0.2s ease;
+}
+
+.status-filter {
+    background-position: 86px 0px;
+    width: 122px;
+}
+
+
+.sort-filter {
+    background-position: 45px 0px;
+    width: 80px;
+}
+
+.status-filter:hover,
+.sort-filter:hover {
+    cursor: pointer;
+    background-image: url(images/drop-dwn-clicked.png);
+}
+
+.sort-filter:focus,
+.status-filter:focus {
+    border-style: solid;
+    border-color: #870000;
+    outline: none;
+}
+
+
+.subject-search {
+    width: 250px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.subject-search:focus, .subject-search:active {
+    border-color: #870000;
+    outline: none;
+}
+
+.subject-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-height: 800px;
+}
+
+.subject-card {
+    margin-top: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subject-card:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.subject-image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.subject-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subject-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.subject-info h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #931515;
+}
+
+.subject-info p {
+    font-size: 14px;
+    color: #000;
+}
+/* End of CSS for Subjects Page */
+
+footer {
+    background-color: #870000;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+
+.footer-content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.social-links .fb {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transform: scale(1.195);
+    margin-right: 1px;
+}
+
+.social-links .insta {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transform: scale(1.286);
+}
+
+.social-links .x {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transform: scale(1.07);
+}
+
+.social-links .yt {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
