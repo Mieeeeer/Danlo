@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  body {
+    background: white;
+    color: #333;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; 
+  }
+
+  header {
+    background: #1c2a48;
+    padding: 20px;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  header h1 {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: white;
+  }
+
+  .school-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .school {
+    flex: 1;
+    position: relative;
+    text-align: center;
+  }
+
+  .school img {
+    width: 100%;
+    height: auto;
+    max-height: 54rem;
+    display: block;
+  }
+
+  .elem-logo img{
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    max-height: 10rem;
+    padding: 20px;
+  }
+
+  .hs-logo img{
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    max-height: 10rem;
+    padding: 20px;
+    right: 0;
+  }
+
+  .school h2 {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 800 ;
+    line-height: 4rem;
+    -webkit-text-stroke: 1.5px black;
+  }
+
+  .school a.button {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .elementary a.button {
+    background: #EB0000;
+  }
+
+  .highschool a.button {
+    background: #0A771A;
+  }
+
+  .about-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background: #fff;
+  }
+
+  .about-elem {
+    width: 45%;
+    background: #dfdfdf;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .about-hs {
+    width: 45%;
+    background: #dfdfdf;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .about-section h1 {
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .about-section p {
+    font-size: 0.95rem;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; 
+  }
+
+  .about-elem .read-more {
+    display: inline-block;
+    text-decoration: none;
+    color: #9E1919;
+    font-weight: bold;
+    margin-top: 3rem;
+    position: relative;
+    right: -90%;
+  }
+
+  .about-hs .read-more {
+    display: inline-block;
+    text-decoration: none;
+    color: #0F3804;
+    font-weight: bold;
+    margin-top: 3rem;
+    position: relative;
+    right: -90%;
+  }
+
+  .about-elem h1 {
+    background: #EB0000;
+    width: 105%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+
+  .about-hs h1 {
+    background: #0A771A;
+    width: 105%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+
+  .stats-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+  }
+
+  .stats-section h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat img {
+    width: 646px;
+    height: auto;
+  }
+
+  .stat .elem-stat {
+    color: #EB0000;
+  }
+
+  .stat .hs-stat {
+    color: #0A771A;
+  }
+
+  .updates-section {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .updates-section h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+
+  .updates {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .update {
+    width: 30%;
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .footer {
+    background: #1c2a48;
+    color: white;
+    padding: 40px 20px;
+  }
+
+  .footer-content {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .footer p {
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+
+  .footer-info p {
+    font-size: 1.5rem;
+  }
+
+  .footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .elem-info {
+    margin-top: 5rem;
+  }
+
+  .hs-info {
+    margin-top: 5rem;
+  }
+
+  .footer .maps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+  }
+
+  .footer iframe {
+    border-radius: 10px;
+    max-width: 100%;
+  }
+
+  .footer img {
+    max-height: 150px;
+    margin: 10px;
+  }
+
+  .footer-logo {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .footer-bottom {
+    margin-top: 80px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  @media (max-width: 500px) {
+    .school-section, .about-section, .stats-section, .stats, .updates-section, .updates, .update, .footer, .maps{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .elementary h2, .elementary a {
+        margin-bottom: -4rem;
+    }
+
+    .highschool h2, .highschool a {
+        margin-bottom: -4.5rem;
+    }
+
+    .about-section, .about-elem, .about-hs{
+        width: 100%;
+        max-width: 500px;
+        gap: 2rem;
+    }
+
+    .about-elem h1, .about-hs h1 {
+        width: 110.5%;
+    }
+
+    .about-elem a, .about-hs a {
+        margin-left: -2.5rem;
+    }
+
+    .updates-section{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .update iframe {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .hs-info {
+        margin-left: -5rem;
+    }
+
+    .footer .maps iframe {
+        width: 100%;
+        max-width: 500px;
+    }
+  }
