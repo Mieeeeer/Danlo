@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(#931515, #e26565);
+  padding: 1rem;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 15rem; 
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: white;
+  }
+
+.hero {
+  text-align: center;
+  position: relative;
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: -40rem;
+}
+
+.hero .logo {
+  width: 250px;
+  margin-bottom: 1rem;
+}
+
+.school-img img{
+  width: 1920px;
+  margin-top: -0.3rem;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  background-color: #fff;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.welcome {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.sta-ana {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.about {
+    background: #FFF2DE;
+}
+
+.about-text {
+    margin-top: 4rem;
+}
+
+.about-text h2 {
+    color: #E31818;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+
+  .about-text .see-more {
+    display: inline-block;
+    text-decoration: none;
+    color: #9E1919;
+    font-weight: bold;
+    margin-top: 3rem;
+    position: relative;
+    right: -90%;
+    margin-left: -2.5rem;
+  }
+
+.enrollment {
+  text-align: center;
+  padding: 2rem;
+  background-color: #FFF2DE;
+}
+
+.enrollment h2{
+    color: #FFA600;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.enrollment-stats img {
+    width: 1800px;
+    margin-top: 5rem;
+}
+
+.announcements {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.announcements h2 {
+    color: #E31818;
+    font-size: 2.5rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #eee;
+  padding: 1rem;
+  width: 550px;
+  border-radius: 8px;
+}
+
+.card iframe {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #5e0b0b;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.contact img{
+    width: 100px;
+    float: left;
+    margin-right: 2rem;
+    margin-left: 1rem;
+}
+
+.contact h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.contact p {
+    float: left;
+    margin-top: 3rem;
+    margin-left: -8rem;
+    font-size: 1.2rem;
+}
+
+.footer-content .map img {
+  width: 300px;
+  height: auto;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 500px) {
+    .school-img, .hero, .about, .enrollment, .announcements, .footer-content, .footer-bottom, .map{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero .welcome {
+        font-size: 1.5rem;
+    }
+
+    .hero .sta-ana {
+        font-size: 3rem;
+    }
+
+    .about {
+        margin-top: -2rem;
+    }
+
+    .about-text {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-video iframe{
+        width: 500px;
+    }
+
+    .enrollment-stats img {
+        width: 500px;
+        margin-left: -2.5rem;
+    }
+
+    .announcements h2 {
+        margin-top: 3rem;
+    }
+
+    .contact h3 {
+        font-size: 1.6rem;
+    }
+
+    .contact img {
+        margin-right: 1rem;
+    }
+
+    .contact p {
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .map iframe {
+        width: 450px;
+    }
+
+}
+
