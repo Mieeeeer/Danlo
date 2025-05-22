@@ -1,0 +1,458 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.home header {
+  background: #1c2a48;
+  color: white;
+  padding: 1rem;
+}
+
+.elem header {
+  background: #69171A;
+  color: white;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.hs header {
+  background: #004028;
+  color: white;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.home header h1 {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.elem header img {
+  width: 100px;
+  margin-left: 1rem;
+}
+
+.hs header img {
+  width: 100px;
+  margin-left: 1rem;
+}
+
+.logo-section {
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.logo-section h1 {
+  margin-left: 1rem;
+}
+
+.home footer {
+  background: #1c2a48;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.elem .elem-welcome header {
+  background: linear-gradient(#931515, #e26565);
+  padding: 1rem;
+}
+
+.elem footer {
+  background: #69171A;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hs footer {
+  background: #004028;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-info {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.logo-section-footer {
+  display: flex;
+}
+
+footer img {
+  width: 120px;
+  margin-left: -30rem;
+}
+
+.contact {
+  margin-top: 2rem;
+}
+
+.contact-info p {
+  margin: 4px 0;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-left: -29rem;
+}
+
+.logo-section-footer h1 {
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.maps iframe {
+  width: 600px;
+  height: 320px;
+  margin-top: -40rem;
+  margin-bottom: 10rem;
+  margin-left: 30rem;
+  margin-right: -30rem;
+}
+
+.copyright p{
+  margin-top: 8rem;
+}
+
+.home-contacts-elem p, .home-contacts-hs p {
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.home-contacts-elem, .home-contacts-hs{
+  margin-top: 5rem;
+}
+
+.home-footer {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.home-footer p {
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.home-footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.home-maps iframe {
+    width: 450px;
+    height: 280px;
+}
+
+.logos img {
+    height: 150px;
+    width: auto;
+    margin: 10px;
+}
+
+.logos {
+  margin-top: 5rem;
+  margin-left: -70rem;
+}
+
+.home-copyright p {
+  margin-top: 5rem;
+}
+
+header .welcome nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  background: none;
+  padding: 10px;
+  margin-top: 0;
+}
+
+.elem nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #363535;
+  padding: 10px;
+  margin-top: 0;
+}
+
+.hs nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #000000;
+  padding: 10px;
+  margin-top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto; 
+    background: #D9D9D9;
+    margin-top: -1rem;
+}
+
+.container-content {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.welcome-container {
+    max-width: 1920px;
+    margin: 0 auto; 
+    background: #D9D9D9;
+    margin-top: 0rem;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 15rem; 
+}
+
+.school-img img{
+  width: 1920px;
+  margin-top: -0.3rem;
+}
+
+.hero {
+  text-align: center;
+  position: relative;
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: -40rem;
+}
+
+.welcome {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.sta-ana {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+  width: 250px;
+  margin-bottom: 1rem;
+}
+
+.about {
+  background: #FFF2DE;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  margin-top: -1rem;
+}
+
+.about-text {
+  margin-top: -2.5rem;
+  max-width: 500px;
+}
+
+.about-text h2 {
+  color: #E31818;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.about-text .see-more {
+  display: inline-block;
+  text-decoration: none;
+  color: #9E1919;
+  font-weight: bold;
+  margin-top: 3rem;
+  position: relative;
+  right: -90%;
+  margin-left: -2.5rem;
+}
+
+.enrollment {
+  text-align: center;
+  padding: 2rem;
+  background-color: #FFF2DE;
+}
+
+.enrollment h2{
+    color: #FFA600;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.enrollment-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fef1e7;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+}
+
+.enrollment-legend {
+    flex: 1;
+    min-width: 200px;
+}
+
+.enrollment-legend p {
+    margin: 5px 0;
+    font-size: 25px;
+    text-align: left;
+}
+
+.dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.dot.female {
+    background-color: #ff007f;
+}
+
+.dot.male {
+    background-color: #0000ff;
+}
+
+.enrollment-icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.enrollment-icons img {
+    width: auto;
+    height: 200px;
+}
+
+.female-percent {
+    color: #ff007f;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.male-percent {
+    color: #0000ff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.elem-intro h2 {
+  color: #E31818;
+  font-size: 2.5rem;
+}
+
+.hs-intro h2 {
+  color: #0A771A;
+  font-size: 2.5rem;
+}
+
+.container-content p {
+  font-size: 20px;
+  margin-bottom: 2.5rem;
+}
+
+.elem-about-img img {
+  width: 1700px;
+  height: auto;
+}
+
+.hs-about-img img {
+  width: 1700px;
+  height: auto;
+}
+
+.elem-history-title, .elem-vms-title{
+  background-color: #C72020;
+  margin-top: 5rem;
+}
+
+.hs-history-title, .hs-vms-title{
+  background-color: #0A771A;
+  margin-top: 5rem;
+}
+
+.elem-history-title h3, .elem-vms-title h3, .hs-history-title h3, .hs-vms-title h3 {
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  margin-left: 1rem;
+}
+
+.elem-history, .hs-history {
+  margin-bottom: 5rem;
+}
+
+.elem-vms .vms-section, .hs-vms .vms-section {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vms-section img {
+    flex: 1;
+    min-width: 200px;
+    max-width: 555px;
+    margin-bottom: 10rem;
+}
+
+.elem-org-chart-title {
+  color: #E31818;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hs-org-chart-title {
+  color: #0A771A;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.org-chart img {
+  max-width: 1700px;
+  height: auto;
+  margin-bottom: 10rem;
+  margin-top: 3rem;
+}
+
+.org-chart {
+  display: flex;
+  justify-content: center;
+}
+
