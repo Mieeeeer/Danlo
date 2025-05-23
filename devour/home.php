@@ -14,7 +14,118 @@
 
         <!-- Container -->
         <main class="container">
-            <h1>home contents here</h1><br><br>
+            <?php
+                $elemImg = $Content->findOne(['type' => 'home', 'title' => 'home-elem-img']);
+                $hsImg = $Content->findOne(['type' => 'home', 'title' => 'home-hs-img']);
+                $elemLogo = $Content->findOne(['type' => 'school_logo', 'title' => 'elem_logo']);
+                $hsLogo = $Content->findOne(['type' => 'school_logo', 'title' => 'hs_logo']);
+            ?>
+
+            <div class="school-container">
+                <div class="school-panels">
+                    <!-- Elementary Panel -->
+                    <div class="school-panel" style="background-image: url('<?= $elemImg['img_path'] ?>');">
+                        <img src="<?= $elemLogo['img_path'] ?>" alt="Elem Logo" class="school-logo-elem">
+                        <div class="school-info">
+                            <h3>STA. ANA<br>CENTRAL<br>ELEMENTARY</h3>
+                            <a href="welcome elem.php" class="view-btn red">VIEW ELEMENTARY</a>
+                        </div>
+                    </div>
+
+                    <!-- High School Panel -->
+                    <div class="school-panel" style="background-image: url('<?= $hsImg['img_path'] ?>');">
+                        <img src="<?= $hsLogo['img_path'] ?>" alt="HS Logo" class="school-logo-hs">
+                        <div class="school-info">
+                            <h3>STA. ANA<br>NATIONAL<br>HIGH SCHOOL</h3>
+                            <a href="welcome hs.php" class="view-btn green">VIEW HIGH SCHOOL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <?php
+                $aboutElem = $Content->findOne(['type' => 'home', 'title' => 'about-elem-home']);
+                $aboutHS = $Content->findOne(['type' => 'home', 'title' => 'about-hs-home']);
+            ?>
+
+            <div class="about-section-home">
+                <!-- Elementary About Card -->
+                <div class="about-card-home red">
+                    <h3>ABOUT THE ELEMENTARY SCHOOL</h3>
+                    <p><?= $aboutElem['description'] ?></p>
+                    <a href="about us elem.php" class="read-more">Read More →</a>
+                </div>
+
+                <!-- High School About Card -->
+                <div class="about-card-home green">
+                    <h3>ABOUT THE HIGH SCHOOL</h3>
+                    <p><?= $aboutHS['description'] ?></p>
+                    <a href="about us hs.php" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <div class="enrollment-stats-home">
+                <h1>ENROLLMENT STATISTICS</h1>
+                    <?php
+                        $dataMap = [];
+                        $cursor = $Content->find(['type' => 'enrollment_data']);
+                        
+                        foreach ($cursor as $doc) {
+                            $dataMap[$doc['title']] = $doc;
+                        }
+
+                        $femaleIcon = $dataMap['female_icon']['img_path'] ?? '';
+                        $maleIcon = $dataMap['male_icon']['img_path'] ?? '';
+                        $femalePercentElem = $dataMap['elem_female_percent']['data'] ?? '0%';
+                        $malePercentElem = $dataMap['elem_male_percent']['data'] ?? '0%';
+                        $femalePercentHs = $dataMap['hs_female_percent']['data'] ?? '0%';
+                        $malePercentHs = $dataMap['hs_male_percent']['data'] ?? '0%';
+                    ?>
+                
+                <div class="stats-data-home">
+                    <div class="elem-stats">
+                        <h3>ELEMENTARY</h3>
+
+                        <div class="enrollment-icons">
+                            <div class="female-block">
+                                <img src="<?= htmlspecialchars($femaleIcon) ?>" alt="Female">
+                            </div>
+
+                            <div class="percentage">
+                                <p class="female-percent"><?= htmlspecialchars($femalePercentElem) ?></p>
+                                <p class="male-percent"><?= htmlspecialchars($malePercentElem) ?></p>
+                            </div>
+                                
+                            <div class="male-block">
+                                <img src="<?= htmlspecialchars($maleIcon) ?>" alt="Male">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hs-stats">
+                        <h3>HIGH SCHOOL</h3>
+
+                        <div class="enrollment-icons">
+                            <div class="female-block">
+                                <img src="<?= htmlspecialchars($femaleIcon) ?>" alt="Female">
+                            </div>
+
+                            <div class="percentage">
+                                <p class="female-percent"><?= htmlspecialchars($femalePercentHs) ?></p>
+                                <p class="male-percent"><?= htmlspecialchars($malePercentHs) ?></p>
+                            </div>
+                                
+                            <div class="male-block">
+                                <img src="<?= htmlspecialchars($maleIcon) ?>" alt="Male">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="latest-updates">
+                <h1>LATEST UPDATES</h1>
+            </div>
         </main>
 
         <!-- Footer -->

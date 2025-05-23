@@ -118,31 +118,39 @@
 
                         $femaleIcon = $dataMap['female_icon']['img_path'] ?? '';
                         $maleIcon = $dataMap['male_icon']['img_path'] ?? '';
-                        $femaleCount = $dataMap['elem_female_enrollee']['data'] ?? '0';
-                        $maleCount = $dataMap['elem_male_enrollee']['data'] ?? '0';
-                        $total = $dataMap['elem_total_enrollee']['data'] ?? '0';
-                        $femalePercent = $dataMap['elem_female_percent']['data'] ?? '0%';
-                        $malePercent = $dataMap['elem_male_percent']['data'] ?? '0%';
+                        $femaleCountElem = $dataMap['elem_female_enrollee']['data'] ?? '0';
+                        $maleCountElem = $dataMap['elem_male_enrollee']['data'] ?? '0';
+                        $totalElem = $dataMap['elem_total_enrollee']['data'] ?? '0';
+                        $femalePercentElem = $dataMap['elem_female_percent']['data'] ?? '0%';
+                        $malePercentElem = $dataMap['elem_male_percent']['data'] ?? '0%';
                     ?>
 
                     <div class="enrollment-stats">
                         <div class="enrollment-legend">
-                            <p><span class="dot female"></span> <?= number_format($femaleCount) ?> Female Students</p>
-                            <p><span class="dot male"></span> <?= number_format($maleCount) ?> Male Students</p>
-                            <p><strong><?= number_format($total) ?> TOTAL ENROLLED</strong></p>
+                            <p><span class="dot female"></span> <?= number_format($femaleCountElem) ?> Female Students</p>
+                            <p><span class="dot male"></span> <?= number_format($maleCountElem) ?> Male Students</p>
+                            <p><strong><?= number_format($totalElem) ?> TOTAL ENROLLED</strong></p>
                         </div>
                         <div class="enrollment-icons">
                             <div class="female-block">
                                 <img src="<?= htmlspecialchars($femaleIcon) ?>" alt="Female">
-                                <p class="female-percent"><?= htmlspecialchars($femalePercent) ?></p>
                             </div>
+
+                            <div class="percentage">
+                                <p class="female-percent"><?= htmlspecialchars($femalePercentElem) ?></p>
+                                <p class="male-percent"><?= htmlspecialchars($malePercentElem) ?></p>
+                            </div>
+
                             <div class="male-block">
                                 <img src="<?= htmlspecialchars($maleIcon) ?>" alt="Male">
-                                <p class="male-percent"><?= htmlspecialchars($malePercent) ?></p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section class="latest-announcement">
+                <h1 class="announcement-elem">LATEST ANNOUNCEMENTS</h1>
             </section>
         </main>
 

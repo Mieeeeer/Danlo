@@ -51,7 +51,7 @@ body {
 }
 
 .home footer {
-  background: #1c2a48;
+  background: linear-gradient(#25385D, #4E76C3);
   color: white;
   padding: 2rem;
   text-align: center;
@@ -316,9 +316,10 @@ nav a {
     justify-content: center;
     align-items: center;
     background: #fef1e7;
-    padding: 20px;
     font-family: Arial, sans-serif;
     flex-wrap: wrap;
+    gap: 10rem;
+    margin-bottom: 4rem;
 }
 
 .enrollment-legend {
@@ -351,8 +352,7 @@ nav a {
 .enrollment-icons {
     display: flex;
     align-items: center;
-    gap: 30px;
-    text-align: center;
+    gap: 8rem;
 }
 
 .enrollment-icons img {
@@ -362,14 +362,30 @@ nav a {
 
 .female-percent {
     color: #ff007f;
-    font-size: 24px;
+    font-size: 80px;
     font-weight: bold;
 }
 
 .male-percent {
     color: #0000ff;
-    font-size: 24px;
+    font-size: 80px;
     font-weight: bold;
+}
+
+.percentage {
+  display: flex;
+  flex-direction: column;
+} 
+
+.percentage p{
+  margin: 0; /* remove default browser margin */
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
 .elem-intro h2 {
@@ -454,5 +470,191 @@ nav a {
 .org-chart {
   display: flex;
   justify-content: center;
+} 
+
+.school-container {
+  margin-top: 1rem;
 }
+
+.school-panels {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.school-panel {
+  position: relative;
+  width: 50%;
+  height: 950px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.school-logo-elem {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  width: 150px;
+  height: auto;
+}
+
+.school-logo-hs {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  width: 150px;
+  height: auto;
+}
+
+.school-info {
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.school-info h3 {
+  margin: 0 0 10px;
+  font-size: 60px;
+  color: white;
+  font-weight: 800;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.view-btn {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 40px;
+    margin-top: 3rem;
+}
+
+.view-btn.red {
+    background-color: #EB0000;
+}
+
+.view-btn.green {
+    background-color: #0A771A;
+}
+
+.about-section-home {
+    display: flex;
+    justify-content: center;
+    gap: 14rem;
+    margin-top: 30px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.about-card-home {
+    width: 40%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: black;
+}
+
+.about-card-home h3 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-card-home.red h3 {
+    color: white;
+    background-color: #EB0000;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.about-card-home.green h3 {
+    color: white;
+    background-color: #0A771A;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.about-section-home p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 50px;
+    padding-bottom: 30px;
+}
+
+.about-card-home.red .read-more {
+  color: #9E1919;
+  position: relative;
+  right: -70%;
+}
+
+.about-card-home.green .read-more {
+  color: #0F3804;
+  position: relative;
+  right: -70%;
+}
+
+.enrollment-stats-home h1{
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.stats-data-home {
+  display: flex;
+  justify-content: center;
+  gap: 27rem;
+}
+
+.stats-data-home h3{
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 25px;
+}
+
+.elem-stats h3 {
+  color: #EB0000;
+}
+
+.hs-stats h3 {
+  color: #0A771A;
+}
+
+.latest-updates h1{
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 15rem;
+  margin-bottom: 3rem;
+}
+
+.announcement-elem {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 12rem;
+  margin-bottom: 3rem;
+  color: #E31818;
+}
+
+
 
