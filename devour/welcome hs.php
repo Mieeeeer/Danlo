@@ -77,7 +77,7 @@
                     ?>
 
                     <div class="see-more-hs">
-                        <a class="see-more" href="about us elem.php">See More →</a>
+                        <a class="see-more" href="about us hs.php">See More →</a>
                     </div>
                 </div>
 
