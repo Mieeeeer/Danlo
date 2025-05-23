@@ -1,0 +1,124 @@
+[{
+  "_id": {
+    "$oid": "6830a2b69a4124308ebe4ae8"
+  },
+  "type": "enrollment_data",
+  "title": "elem_school_year",
+  "description": "OVERALL ENROLLMENT DATA SY. 2024-2025"
+},
+{
+  "_id": {
+    "$oid": "6830a3399a4124308ebe4aef"
+  },
+  "type": "enrollment_data",
+  "title": "female_icon",
+  "img_path": "images/female.png",
+  "description": "pink female icon for the enrollment statistics"
+},
+{
+  "_id": {
+    "$oid": "6830a3669a4124308ebe4af3"
+  },
+  "type": "enrollment_data",
+  "title": "male_icon",
+  "img_path": "images/male.png",
+  "description": "blue male icon for the enrollment statistics"
+},
+{
+  "_id": {
+    "$oid": "6830a3989a4124308ebe4af7"
+  },
+  "type": "enrollment_data",
+  "title": "elem_female_enrollee",
+  "data": "1476",
+  "description": "total female enrolled in Sta. Ana Central Elementary School"
+},
+{
+  "_id": {
+    "$oid": "6830a3e49a4124308ebe4afb"
+  },
+  "type": "enrollment_data",
+  "title": "elem_male_enrollee",
+  "data": "1541",
+  "description": "total male enrolled in Sta. Ana Central Elementary School"
+},
+{
+  "_id": {
+    "$oid": "6830a4939a4124308ebe4b03"
+  },
+  "type": "enrollment_data",
+  "title": "elem_total_enrollee",
+  "data": "3017",
+  "description": "total number of students enrolled in Sta. Ana Central Elementary School"
+},
+{
+  "_id": {
+    "$oid": "6830a4d09a4124308ebe4b09"
+  },
+  "type": "enrollment_data",
+  "title": "elem_female_percent",
+  "data": "48.9%",
+  "description": "percentage of female enrolled in Sta. Ana Central Elementary School"
+},
+{
+  "_id": {
+    "$oid": "6830a4ef9a4124308ebe4b0d"
+  },
+  "type": "enrollment_data",
+  "title": "elem_male_percent",
+  "data": "51.1%",
+  "description": "percentage of male enrolled in Sta. Ana Central Elementary School"
+},
+{
+  "_id": {
+    "$oid": "6830a54c9a4124308ebe4b11"
+  },
+  "type": "enrollment_data",
+  "title": "hs_female_enrollee",
+  "data": "1944",
+  "description": "total female enrolled in Sta. Ana National High School"
+},
+{
+  "_id": {
+    "$oid": "6830a5639a4124308ebe4b15"
+  },
+  "type": "enrollment_data",
+  "title": "hs_male_enrollee",
+  "data": "2556",
+  "description": "total male enrolled in Sta. Ana National High School"
+},
+{
+  "_id": {
+    "$oid": "6830a5799a4124308ebe4b19"
+  },
+  "type": "enrollment_data",
+  "title": "hs_total_enrollee",
+  "data": "4500",
+  "description": "total number of students enrolled in Sta. Ana National High School"
+},
+{
+  "_id": {
+    "$oid": "6830a5a19a4124308ebe4b1f"
+  },
+  "type": "enrollment_data",
+  "title": "hs_female_percent",
+  "data": "43.2%",
+  "description": "percentage of female enrolled in Sta. Ana National High School"
+},
+{
+  "_id": {
+    "$oid": "6830a5b59a4124308ebe4b23"
+  },
+  "type": "enrollment_data",
+  "title": "hs_male_percent",
+  "data": "56.8%",
+  "description": "percentage of male enrolled in Sta. Ana National High School"
+},
+{
+  "_id": {
+    "$oid": "6830f72a9a4124308ebe4bed"
+  },
+  "type": "enrollment_data",
+  "title": "hs_school_year",
+  "description": "OVERALL ENROLLMENT DATA SY. 2024-2025"
+}]
