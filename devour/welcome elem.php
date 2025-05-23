@@ -21,7 +21,7 @@
                             <li><a href="">Admission</a></li>
                             <li><a href="">Announcement</a></li>
                             <li><a href="">FAQs</a></li>
-                            <li><a href="">Contact Us</a></li>
+                            <li><a href="contact us elem.php">Contact Us</a></li>
                         </ul>
                     </nav>
                 </section>
@@ -34,7 +34,7 @@
             
             <div class="school-img">
                 <?php
-                    $welcomeElemImage = $Content->findOne([
+                    $welcomeElemImage = $Welcome->findOne([
                         'type' => 'welcome',
                         'title' => 'welcome_img_elem'
                         ]);
@@ -47,7 +47,7 @@
 
             <section class="hero">
                 <?php
-                    $elemLogo = $Content->findOne([
+                    $elemLogo = $Logo->findOne([
                         'type' => 'school_logo',
                         'title' => 'elem_logo'
                     ]);
@@ -66,7 +66,7 @@
                     <h2 class="about-text-elem"><u>ABOUT THE SCHOOL</u></h2>
 
                     <?php
-                        $aboutElemWelcome = $Content->findOne([
+                        $aboutElemWelcome = $Welcome->findOne([
                             'type' => 'welcome',
                             'title' => 'about_elem_welcome'
                         ]);
@@ -76,12 +76,14 @@
                         } 
                     ?>
 
-                    <a class="see-more" href="about us elem.php">See More →</a>
+                    <div class="see-more-elem">
+                        <a class="see-more" href="about us elem.php">See More →</a>
+                    </div>
                 </div>
 
                 <div class="about-video">
                     <?php
-                        $ytEmbed = $Content->findOne([
+                        $ytEmbed = $Welcome->findOne([
                             'type' => 'welcome',
                             'title' => 'elem_yt_link'
                         ]);
@@ -97,7 +99,7 @@
 
             <section class="enrollment">
                 <?php
-                    $enrollmentData = $Content->findOne([
+                    $enrollmentData = $Enrollment->findOne([
                         'type' => 'enrollment_data',
                         'title' => 'elem_school_year'
                     ]);
@@ -110,7 +112,7 @@
                 <div class="enrollment-stats">
                     <?php
                         $dataMap = [];
-                        $cursor = $Content->find(['type' => 'enrollment_data']);
+                        $cursor = $Enrollment->find(['type' => 'enrollment_data']);
                         
                         foreach ($cursor as $doc) {
                             $dataMap[$doc['title']] = $doc;
@@ -152,6 +154,44 @@
             <section class="latest-announcement">
                 <h1 class="announcement-elem">LATEST ANNOUNCEMENTS</h1>
             </section>
+
+            <div class="latest-updates">
+
+                <?php
+                    $filter = [
+                        'type' => 'announcement',
+                        'school_level' => 'elementary'
+                    ];
+                    $options = [
+                        'sort' => ['created_at' => -1],
+                        'limit' => 3
+                    ];
+
+                    $announcements = $AnnouncementLink->find($filter, $options);                    
+                ?>
+
+                <section class="announcement-section">
+                    <div class="announcement-cards">
+                        <?php foreach ($announcements as $announcement): ?>
+                        <div class="announcement-card">
+                            <div class="iframe-wrapper">
+                                <iframe 
+                                    src="<?= htmlspecialchars($announcement['iframe_link']) ?>" 
+                                    width="500" 
+                                    height="600" 
+                                    style="border:none;overflow:hidden" 
+                                    scrolling="no" 
+                                    frameborder="0" 
+                                    allowfullscreen="true" 
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                </section>
+            </div>
+            <br>
         </main>
 
         <!-- Footer -->
@@ -161,7 +201,7 @@
                 
                     <div class="logo-section-footer">
                         <?php
-                            $elemLogo = $Content->findOne([
+                            $elemLogo = $Logo->findOne([
                                 'type' => 'school_logo',
                                 'title' => 'elem_logo'
                             ]);
@@ -181,7 +221,7 @@
                             $titles = ['district_elem', 'city'];
       
                             foreach ($titles as $title) {
-                                $doc = $Content->findOne(['type' => 'contact', 'title' => $title]);
+                                $doc = $Contact->findOne(['type' => 'contact', 'title' => $title]);
 
                                 if ($doc && isset($doc['description'])) {
                                     echo '<p>' . nl2br(htmlspecialchars($doc['description'])) . '</p>';
@@ -195,7 +235,7 @@
                             $titles = ['elem_contactNo', 'elem_email'];
       
                             foreach ($titles as $title) {
-                                $doc = $Content->findOne(['type' => 'contact', 'title' => $title]);
+                                $doc = $Contact->findOne(['type' => 'contact', 'title' => $title]);
 
                                 if ($doc && isset($doc['description'])) {
                                     echo '<p>' . nl2br(htmlspecialchars($doc['description'])) . '</p>';
@@ -211,7 +251,7 @@
 
                 <div class="maps">
                     <?php
-                        $elemMap = $Content->findOne([
+                        $elemMap = $Contact->findOne([
                             'type' => 'maps',
                             'title' => 'elem_maps'
                         ]);

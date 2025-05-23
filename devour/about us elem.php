@@ -13,7 +13,7 @@
         <header>
             <div class="logo-section">
                 <?php
-                    $elemLogo = $Content->findOne([
+                    $elemLogo = $Logo->findOne([
                         'type' => 'school_logo',
                         'title' => 'elem_logo'
                     ]);
@@ -36,7 +36,7 @@
                 <li><a href="">Admission</a></li>
                 <li><a href="">Announcement</a></li>
                 <li><a href="">FAQs</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="contact us elem.php">Contact Us</a></li>
             </ul>
         </nav>
 
@@ -48,7 +48,7 @@
                     <h2>Sta. Ana Central Elementary School</h2>
 
                     <?php
-                        $introElem = $Content->findOne([
+                        $introElem = $About->findOne([
                             'type' => 'about',
                             'title' => 'intro_elem'
                         ]);
@@ -61,7 +61,7 @@
 
                 <section class="elem-about-img">
                     <?php
-                        $aboutElemImage = $Content->findOne([
+                        $aboutElemImage = $About->findOne([
                             'type' => 'about',
                             'title' => 'about-elem-img'
                         ]);
@@ -74,7 +74,7 @@
 
                 <section class="elem-background">
                     <?php
-                        $backgroundElem = $Content->findOne([
+                        $backgroundElem = $About->findOne([
                             'type' => 'about',
                             'title' => 'background_elem'
                         ]);
@@ -91,7 +91,7 @@
                     </div>
 
                     <?php
-                        $historyElem = $Content->findOne([
+                        $historyElem = $About->findOne([
                             'type' => 'about',
                             'title' => 'history_elem'
                         ]);
@@ -112,7 +112,7 @@
                             $titles = ['vision', 'mission', 'core_values'];
             
                             foreach ($titles as $title) {
-                                $doc = $Content->findOne(['type' => 'about', 'title' => $title]);
+                                $doc = $About->findOne(['type' => 'about', 'title' => $title]);
 
                                 if ($doc && isset($doc['img_path'])) {
                                     echo '<div class="about-card">';
@@ -133,7 +133,7 @@
                 
                     <div class="logo-section-footer">
                         <?php
-                            $elemLogo = $Content->findOne([
+                            $elemLogo = $Logo->findOne([
                                 'type' => 'school_logo',
                                 'title' => 'elem_logo'
                             ]);
@@ -153,7 +153,7 @@
                             $titles = ['district_elem', 'city'];
       
                             foreach ($titles as $title) {
-                                $doc = $Content->findOne(['type' => 'contact', 'title' => $title]);
+                                $doc = $Contact->findOne(['type' => 'contact', 'title' => $title]);
 
                                 if ($doc && isset($doc['description'])) {
                                     echo '<p>' . nl2br(htmlspecialchars($doc['description'])) . '</p>';
@@ -167,7 +167,7 @@
                             $titles = ['elem_contactNo', 'elem_email'];
       
                             foreach ($titles as $title) {
-                                $doc = $Content->findOne(['type' => 'contact', 'title' => $title]);
+                                $doc = $Contact->findOne(['type' => 'contact', 'title' => $title]);
 
                                 if ($doc && isset($doc['description'])) {
                                     echo '<p>' . nl2br(htmlspecialchars($doc['description'])) . '</p>';
@@ -183,7 +183,7 @@
 
                 <div class="maps">
                     <?php
-                        $elemMap = $Content->findOne([
+                        $elemMap = $Contact->findOne([
                             'type' => 'maps',
                             'title' => 'elem_maps'
                         ]);

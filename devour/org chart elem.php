@@ -13,7 +13,7 @@
         <header>
             <div class="logo-section">
                 <?php
-                    $elemLogo = $Content->findOne([
+                    $elemLogo = $Logo->findOne([
                         'type' => 'school_logo',
                         'title' => 'elem_logo'
                     ]);
@@ -36,7 +36,7 @@
                 <li><a href="">Admission</a></li>
                 <li><a href="">Announcement</a></li>
                 <li><a href="">FAQs</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="contact us elem.php">Contact Us</a></li>
             </ul>
         </nav>
 
@@ -49,7 +49,7 @@
 
             <div class="org-chart">
                 <?php
-                    $elemOrgChart = $Content->findOne([
+                    $elemOrgChart = $OrgChart->findOne([
                         'type' => 'org_chart',
                         'title' => 'elem_org_chart'
                     ]);
@@ -68,7 +68,7 @@
                 
                     <div class="logo-section-footer">
                         <?php
-                            $elemLogo = $Content->findOne([
+                            $elemLogo = $Logo->findOne([
                                 'type' => 'school_logo',
                                 'title' => 'elem_logo'
                             ]);
@@ -88,7 +88,7 @@
                             $titles = ['district_elem', 'city'];
       
                             foreach ($titles as $title) {
-                                $doc = $Content->findOne(['type' => 'contact', 'title' => $title]);
+                                $doc = $Contact->findOne(['type' => 'contact', 'title' => $title]);
 
                                 if ($doc && isset($doc['description'])) {
                                     echo '<p>' . nl2br(htmlspecialchars($doc['description'])) . '</p>';
@@ -102,7 +102,7 @@
                             $titles = ['elem_contactNo', 'elem_email'];
       
                             foreach ($titles as $title) {
-                                $doc = $Content->findOne(['type' => 'contact', 'title' => $title]);
+                                $doc = $Contact->findOne(['type' => 'contact', 'title' => $title]);
 
                                 if ($doc && isset($doc['description'])) {
                                     echo '<p>' . nl2br(htmlspecialchars($doc['description'])) . '</p>';
@@ -118,7 +118,7 @@
 
                 <div class="maps">
                     <?php
-                        $elemMap = $Content->findOne([
+                        $elemMap = $Contact->findOne([
                             'type' => 'maps',
                             'title' => 'elem_maps'
                         ]);

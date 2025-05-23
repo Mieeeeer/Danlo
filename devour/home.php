@@ -15,10 +15,10 @@
         <!-- Container -->
         <main class="container">
             <?php
-                $elemImg = $Content->findOne(['type' => 'home', 'title' => 'home-elem-img']);
-                $hsImg = $Content->findOne(['type' => 'home', 'title' => 'home-hs-img']);
-                $elemLogo = $Content->findOne(['type' => 'school_logo', 'title' => 'elem_logo']);
-                $hsLogo = $Content->findOne(['type' => 'school_logo', 'title' => 'hs_logo']);
+                $elemImg = $Home->findOne(['type' => 'home', 'title' => 'home-elem-img']);
+                $hsImg = $Home->findOne(['type' => 'home', 'title' => 'home-hs-img']);
+                $elemLogo = $Logo->findOne(['type' => 'school_logo', 'title' => 'elem_logo']);
+                $hsLogo = $Logo->findOne(['type' => 'school_logo', 'title' => 'hs_logo']);
             ?>
 
             <div class="school-container">
@@ -44,8 +44,8 @@
             </div>
 
             <?php
-                $aboutElem = $Content->findOne(['type' => 'home', 'title' => 'about-elem-home']);
-                $aboutHS = $Content->findOne(['type' => 'home', 'title' => 'about-hs-home']);
+                $aboutElem = $Home->findOne(['type' => 'home', 'title' => 'about-elem-home']);
+                $aboutHS = $Home->findOne(['type' => 'home', 'title' => 'about-hs-home']);
             ?>
 
             <div class="about-section-home">
@@ -68,7 +68,7 @@
                 <h1>ENROLLMENT STATISTICS</h1>
                     <?php
                         $dataMap = [];
-                        $cursor = $Content->find(['type' => 'enrollment_data']);
+                        $cursor = $Enrollment->find(['type' => 'enrollment_data']);
                         
                         foreach ($cursor as $doc) {
                             $dataMap[$doc['title']] = $doc;
@@ -125,7 +125,39 @@
 
             <div class="latest-updates">
                 <h1>LATEST UPDATES</h1>
+
+                <?php
+                    $filter = ['type' => 'announcement'];
+                    $options = [
+                        'sort' => ['created_at' => -1],
+                        'limit' => 3
+                    ];
+
+                    $announcements = $AnnouncementLink->find($filter, $options);                    
+                ?>
+
+                <section class="announcement-section">
+                    <div class="announcement-cards">
+                        <?php foreach ($announcements as $announcement): ?>
+                        <div class="announcement-card">
+                            <div class="iframe-wrapper">
+                                <iframe 
+                                    src="<?= htmlspecialchars($announcement['iframe_link']) ?>" 
+                                    width="500" 
+                                    height="600" 
+                                    style="border:none;overflow:hidden" 
+                                    scrolling="no" 
+                                    frameborder="0" 
+                                    allowfullscreen="true" 
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                </section>
             </div>
+            <br>
         </main>
 
         <!-- Footer -->
@@ -139,7 +171,7 @@
                         $titles = ['elem_school_name', 'district_elem', 'city', 'elem_email'];
                               
                             foreach ($titles as $title) {
-                                $doc = $Content->findOne(['type' => 'contact', 'title' => $title]);
+                                $doc = $Contact->findOne(['type' => 'contact', 'title' => $title]);
 
                                 if ($doc && isset($doc['description'])) {
                                     echo '<p>' . nl2br(htmlspecialchars($doc['description'])) . '</p>';
@@ -150,7 +182,7 @@
 
                 <div class="home-maps">
                     <?php
-                        $elemMap = $Content->findOne([
+                        $elemMap = $Contact->findOne([
                             'type' => 'maps',
                             'title' => 'elem_maps'
                         ]);
@@ -169,7 +201,7 @@
                         $titles = ['hs_school_name', 'district_hs', 'city', 'hs_email'];
                               
                             foreach ($titles as $title) {
-                                $doc = $Content->findOne(['type' => 'contact', 'title' => $title]);
+                                $doc = $Contact->findOne(['type' => 'contact', 'title' => $title]);
 
                                 if ($doc && isset($doc['description'])) {
                                     echo '<p>' . nl2br(htmlspecialchars($doc['description'])) . '</p>';
@@ -180,7 +212,7 @@
 
                 <div class="home-maps">
                     <?php
-                        $hsMap = $Content->findOne([
+                        $hsMap = $Contact->findOne([
                             'type' => 'maps',
                             'title' => 'hs_maps'
                         ]);
@@ -201,7 +233,7 @@
                     $titles = ['deped_logo', 'elem_logo', 'city', 'hs_logo'];
                               
                     foreach ($titles as $title) {
-                        $doc = $Content->findOne(['type' => 'school_logo', 'title' => $title]);
+                        $doc = $Logo->findOne(['type' => 'school_logo', 'title' => $title]);
 
                         if ($doc && isset($doc['img_path'])) {
                             echo '<img src="' . htmlspecialchars($doc['img_path']) . '" alt="Image">';
