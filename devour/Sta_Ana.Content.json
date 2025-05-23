@@ -406,4 +406,36 @@
   "type": "enrollment_data",
   "title": "elem_school_year",
   "description": "OVERALL ENROLLMENT DATA SY. 2024-2025"
+},
+{
+  "_id": {
+    "$oid": "683024310c63f6c628d2645f"
+  },
+  "type": "home",
+  "title": "home-elem-img",
+  "img_path": "images/elem home.png"
+},
+{
+  "_id": {
+    "$oid": "683024690c63f6c628d26461"
+  },
+  "type": "home",
+  "title": "home-hs-img",
+  "img_path": "images/highschool home.png"
+},
+{
+  "_id": {
+    "$oid": "68302de70c63f6c628d26463"
+  },
+  "type": "home",
+  "title": "about-elem-home",
+  "description": "Sta. Ana Central Elementary School, named after the Patron Saint, Sta. Ana, is situated in a community of busy streets, commercial and residential buildings, government and private offices, along Ramon Magsaysay Avenue, Davao City."
+},
+{
+  "_id": {
+    "$oid": "68302ec50c63f6c628d26465"
+  },
+  "type": "home",
+  "title": "about-hs-home",
+  "description": "Sta. Ana National High School, named after the patron saint Sta. Ana, is located along Damaso Suazo Street in Davao City. It is surrounded by residential areas, local businesses, and government offices, making it easily accessible to students from nearby communities.\n\n"
 }]
