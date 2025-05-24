@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "6830a80f9a4124308ebe4b2b"
+  },
+  "type": "school_logo",
+  "title": "hs_logo",
+  "img_path": "images/Sta. Ana High logo.png",
+  "description": "Logo of Sta. Ana National High School"
+},
+{
+  "_id": {
+    "$oid": "6830a8879a4124308ebe4b2f"
+  },
+  "type": "school_logo",
+  "title": "elem_logo",
+  "img_path": "images/Sta. Ana Elem logo.png",
+  "description": "Logo of Sta. Ana Central Elementary School"
+},
+{
+  "_id": {
+    "$oid": "6830a8d99a4124308ebe4b33"
+  },
+  "title": "deped_logo",
+  "img_path": "images/deped logo.png",
+  "description": "Logo of DepEd and Bagong Pilipinas",
+  "type": "school_logo"
+}]

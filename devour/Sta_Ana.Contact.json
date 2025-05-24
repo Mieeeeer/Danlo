@@ -1,0 +1,136 @@
+[{
+  "_id": {
+    "$oid": "6830ab399a4124308ebe4b49"
+  },
+  "type": "contact",
+  "title": "elem_school_name",
+  "description": "Sta. Ana Central Elementary School"
+},
+{
+  "_id": {
+    "$oid": "6830aba19a4124308ebe4b4d"
+  },
+  "type": "contact",
+  "title": "district_elem",
+  "description": "R. Magsaysay Avenue, Sta. Ana District"
+},
+{
+  "_id": {
+    "$oid": "6830abbc9a4124308ebe4b51"
+  },
+  "type": "contact",
+  "title": "city",
+  "description": "Davao City, Davao Del Sur, 8000"
+},
+{
+  "_id": {
+    "$oid": "6830abd89a4124308ebe4b55"
+  },
+  "type": "contact",
+  "title": "elem_contactNo",
+  "description": "+639999999999"
+},
+{
+  "_id": {
+    "$oid": "6830abf19a4124308ebe4b59"
+  },
+  "type": "contact",
+  "title": "elem_email",
+  "description": "staana.ces@deped.gov.ph"
+},
+{
+  "_id": {
+    "$oid": "6830ac419a4124308ebe4b5d"
+  },
+  "type": "contact",
+  "title": "elem_facebook",
+  "description": "www.facebook.com/sacesdvo"
+},
+{
+  "_id": {
+    "$oid": "6830ac539a4124308ebe4b61"
+  },
+  "type": "contact",
+  "title": "elem_youtube",
+  "description": "www.youtube.com/sacesstudios"
+},
+{
+  "_id": {
+    "$oid": "6830acb09a4124308ebe4b67"
+  },
+  "type": "contact",
+  "title": "district_hs",
+  "description": "Suazo Street, Poblacion District"
+},
+{
+  "_id": {
+    "$oid": "6830acc79a4124308ebe4b6c"
+  },
+  "type": "contact",
+  "title": "hs_contactNo",
+  "description": "+639999999999"
+},
+{
+  "_id": {
+    "$oid": "6830ace69a4124308ebe4b70"
+  },
+  "type": "contact",
+  "title": "hs_email",
+  "description": "staananhs@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6830ad089a4124308ebe4b74"
+  },
+  "type": "contact",
+  "title": "hs_facebook",
+  "description": "www.facebook.com/StaAnaNHSofficialpage"
+},
+{
+  "_id": {
+    "$oid": "6830ad1c9a4124308ebe4b78"
+  },
+  "type": "contact",
+  "title": "hs_youtube",
+  "description": "www.youtube.com/staananhsofficialyt"
+},
+{
+  "_id": {
+    "$oid": "6830ad3a9a4124308ebe4b7c"
+  },
+  "type": "contact",
+  "title": "hs_school_name",
+  "description": "Sta. Ana National High School"
+},
+{
+  "_id": {
+    "$oid": "6830b42a9a4124308ebe4bc6"
+  },
+  "type": "maps",
+  "title": "hs_maps",
+  "iframe_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1011934.936397993!2d124.55197254462243!3d7.803495231368957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d1c00ecfdf1%3A0x7d0c644836840611!2sSta.%20Ana%20Nationa%20High%20School%20(Main%20Campus)!5e0!3m2!1sen!2sph!4v1747861797719!5m2!1sen!2sph"
+},
+{
+  "_id": {
+    "$oid": "6830b4649a4124308ebe4bca"
+  },
+  "type": "maps",
+  "title": "elem_maps",
+  "iframe_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.451047474728!2d125.61671467499791!3d7.073588792929157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d99ca1974cb%3A0xbeb3451064601252!2sSta.%20Ana%20Central%20Elementary%20School!5e0!3m2!1sen!2sph!4v1747861639292!5m2!1sen!2sph"
+},
+{
+  "_id": {
+    "$oid": "6830c56e9a4124308ebe4bd1"
+  },
+  "type": "contact",
+  "title": "facebook-icon",
+  "img_path": "images/facebook.png"
+},
+{
+  "_id": {
+    "$oid": "6830c89b9a4124308ebe4bd3"
+  },
+  "type": "contact",
+  "title": "youtube-icon",
+  "img_path": "images/youtube.png"
+}]

@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "6830af019a4124308ebe4b89"
+  },
+  "type": "welcome",
+  "title": "about_elem_welcome",
+  "description": "Sta. Ana Central Elementary School (SACES), located in Davao City, is a public institution under DepEd Region XI that offers quality education from Kindergarten to Grade 6. With a strong commitment to academic excellence and holistic development, SACES engages students in various extracurricular and community programs, fostering a supportive and inclusive learning environment for future-ready learners."
+},
+{
+  "_id": {
+    "$oid": "6830af929a4124308ebe4b8d"
+  },
+  "type": "welcome",
+  "title": "welcome_img_elem",
+  "img_path": "images/elem banner.png"
+},
+{
+  "_id": {
+    "$oid": "6830b3c59a4124308ebe4bc0"
+  },
+  "type": "welcome",
+  "title": "elem_yt_link",
+  "iframe_link": "https://www.youtube.com/embed/CjQW2mSr-OA?si=8qYqQ9eGr1pmQovJ"
+},
+{
+  "_id": {
+    "$oid": "6830f1bc9a4124308ebe4be6"
+  },
+  "type": "welcome",
+  "title": "welcome_img_hs",
+  "img_path": "images/hs banner.png"
+},
+{
+  "_id": {
+    "$oid": "6830f5359a4124308ebe4be8"
+  },
+  "type": "welcome",
+  "title": "about_hs_welcome",
+  "description": "Sta. Ana National High School (SANHS) in Davao City is a public secondary school under DepEd Region XI that offers quality education from Grades 7 to 12. Committed to academic excellence and holistic development, SANHS provides programs that prepare students for future success through strong academics, leadership opportunities, and community engagement. The school fosters an inclusive and supportive environment that nurtures well-rounded, future-ready learners."
+},
+{
+  "_id": {
+    "$oid": "6830f6d09a4124308ebe4bea"
+  },
+  "type": "welcome",
+  "title": "hs_yt_link",
+  "iframe_link": "https://www.youtube.com/embed/yoT3Yi4ZLqQ?si=xsqTa43xoVNEUoMf"
+}]

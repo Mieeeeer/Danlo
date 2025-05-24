@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "6830b01c9a4124308ebe4b93"
+  },
+  "type": "about",
+  "title": "intro_elem",
+  "description": "Sta. Ana Central Elementary School, named after the Patron Saint, Sta. Ana, is situated in a community of busy streets, commercial and residential buildings, government and private offices, along Ramon Magsaysay Avenue, Davao City."
+},
+{
+  "_id": {
+    "$oid": "6830b0459a4124308ebe4b97"
+  },
+  "type": "about",
+  "title": "about-elem-img",
+  "img_path": "images/Sta. Ana Elem About.png"
+},
+{
+  "_id": {
+    "$oid": "6830b0779a4124308ebe4b9b"
+  },
+  "type": "about",
+  "title": "background_elem",
+  "description": "The main dialect in the community is Cebuano which is spoken by approximately 75% of the total population. The other dialects are Ilonggo, Pangasinense, Ilocano, Bikolano, Tagalog and Kapangpangan. Approximately 75% of the clientele are Roman Catholics while the rest are Islam, Aglipayans, Protestants, Seventh Day Adventists, and Iglesia ni Kristo. Most of the populace belongs to below average to above average socio-economic status."
+},
+{
+  "_id": {
+    "$oid": "6830b0a09a4124308ebe4b9f"
+  },
+  "type": "about",
+  "title": "history_elem",
+  "description": "The Sta. Ana Central Elementary School (SACES) site was surveyed on March 19, 1925 and resurveyed in 1935 with reserved school site of 49,894 sq. m. Based on the School Site Card duly signed by Superintendent Albert Mayes, only 40,655 sq. m. was purchased on May 15, 1940 which was then divided by four schools namely:  Sta. Ana Central Elementary School, Manuel A. Roxas Elementary School, Rizal Elementary School and Manuel L. Quezon Elementary School. Out of 40, 655 sq. m., SACES is occupying 14, 023 sq. m. only."
+},
+{
+  "_id": {
+    "$oid": "6830b0f99a4124308ebe4ba3"
+  },
+  "type": "about",
+  "title": "vision",
+  "img_path": "images/vision.png"
+},
+{
+  "_id": {
+    "$oid": "6830b1099a4124308ebe4ba7"
+  },
+  "type": "about",
+  "title": "mission",
+  "img_path": "images/mission.png"
+},
+{
+  "_id": {
+    "$oid": "6830b11c9a4124308ebe4bab"
+  },
+  "type": "about",
+  "title": "core_values",
+  "img_path": "images/core_values.png"
+},
+{
+  "_id": {
+    "$oid": "6830b1de9a4124308ebe4baf"
+  },
+  "type": "about",
+  "title": "intro_hs",
+  "description": "Sta. Ana National High School (SANHS), named after the patron saint Sta. Ana, is located along Damaso Suazo Street in Davao City. It is surrounded by residential areas, local businesses, and government offices, making it easily accessible to students from nearby communities."
+},
+{
+  "_id": {
+    "$oid": "6830b2089a4124308ebe4bb3"
+  },
+  "type": "about",
+  "title": "about-hs-img",
+  "img_path": "images/Sta. Ana High About.png"
+},
+{
+  "_id": {
+    "$oid": "6830b2389a4124308ebe4bb7"
+  },
+  "type": "about",
+  "title": "background_hs",
+  "description": "The dominant language spoken in the area is Cebuano, used by approximately 70–75% of the population. Other languages and dialects spoken include Tagalog, Ilonggo, Ilocano, Bikolano, Pangasinense, and Kapampangan, reflecting the city's multicultural composition. The religious landscape is also diverse, with the majority of students and community members identifying as Roman Catholic, while others belong to Islam, Iglesia ni Cristo, Aglipayan Church, Protestant denominations, and Seventh-day Adventist Church."
+},
+{
+  "_id": {
+    "$oid": "6830b2649a4124308ebe4bbb"
+  },
+  "type": "about",
+  "title": "history_hs",
+  "description": "Sta. Ana National High School (SANHS) in Davao City was established in July 1976 as an annex of Davao City High School, starting with 271 students, five sections, and a small but dedicated team of teachers. It was founded to provide accessible education to the growing youth population in the Sta. Ana area, particularly those from low-income families. With the nationalization of public high schools, SANHS gained independence and gradually expanded its programs, faculty, and facilities. Today, it serves over 8,000 students across multiple campuses, continuing its mission to deliver quality, inclusive education and support the holistic development of its learners."
+}]
