@@ -156,40 +156,108 @@
             </section>
 
             <div class="latest-updates">
-
                 <?php
+                    // Get latest content items marked for elementary display
                     $filter = [
-                        'type' => 'announcement',
-                        'school_level' => 'elementary'
+                        '$and' => [
+                            ['type' => ['$in' => ['news', 'blog_post', 'facebook_post']]],
+                            ['status' => 'published'],
+                            ['display_pages' => 'elementary']
+                        ]
                     ];
                     $options = [
                         'sort' => ['created_at' => -1],
                         'limit' => 3
                     ];
 
-                    $announcements = $AnnouncementLink->find($filter, $options);                    
+                    $latest_content = $Content->find($filter, $options);                    
                 ?>
 
                 <section class="announcement-section">
                     <div class="announcement-cards">
-                        <?php foreach ($announcements as $announcement): ?>
+                        <?php foreach ($latest_content as $content): ?>
                         <div class="announcement-card">
-                            <div class="iframe-wrapper">
-                                <iframe 
-                                    src="<?= htmlspecialchars($announcement['iframe_link']) ?>" 
-                                    width="500" 
-                                    height="600" 
-                                    style="border:none;overflow:hidden" 
-                                    scrolling="no" 
-                                    frameborder="0" 
-                                    allowfullscreen="true" 
-                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                                </iframe>
-                            </div>
+                            <?php if ($content['type'] === 'facebook_post'): ?>
+                                <div class="iframe-wrapper">
+                                    <iframe 
+                                        src="https://www.facebook.com/plugins/post.php?href=<?php echo urlencode($content['post_url']); ?>&show_text=true&width=500" 
+                                        width="500" 
+                                        height="600" 
+                                        style="border:none;overflow:hidden" 
+                                        scrolling="no" 
+                                        frameborder="0" 
+                                        allowfullscreen="true" 
+                                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                    </iframe>
+                                </div>
+                            <?php else: ?>
+                                <div class="content-card">
+                                    <?php if (isset($content['featured_image'])): ?>
+                                        <img src="<?php echo htmlspecialchars($content['featured_image']); ?>" alt="Featured Image" class="content-image">
+                                    <?php endif; ?>
+                                    <div class="content-details">
+                                        <h3><?php echo htmlspecialchars($content['title']); ?></h3>
+                                        <?php if ($content['type'] === 'blog_post'): ?>
+                                            <p class="excerpt"><?php echo htmlspecialchars($content['excerpt']); ?></p>
+                                        <?php endif; ?>
+                                        <div class="meta">
+                                            <span class="type"><?php echo ucfirst(str_replace('_', ' ', $content['type'])); ?></span>
+                                            <span class="author">By <?php echo htmlspecialchars($content['author']); ?></span>
+                                            <span class="date"><?php echo $content['created_at']->toDateTime()->format('M j, Y'); ?></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
                         </div>
                         <?php endforeach; ?>
                     </div>
                 </section>
+
+                <style>
+                    .content-card {
+                        background: white;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        overflow: hidden;
+                        margin-bottom: 20px;
+                    }
+
+                    .content-image {
+                        width: 100%;
+                        height: 200px;
+                        object-fit: cover;
+                    }
+
+                    .content-details {
+                        padding: 15px;
+                    }
+
+                    .content-details h3 {
+                        margin: 0 0 10px 0;
+                        color: #333;
+                        font-size: 1.2rem;
+                    }
+
+                    .excerpt {
+                        color: #666;
+                        margin: 10px 0;
+                        font-size: 0.9rem;
+                        line-height: 1.4;
+                    }
+
+                    .meta {
+                        font-size: 0.8rem;
+                        color: #666;
+                        display: flex;
+                        gap: 10px;
+                        flex-wrap: wrap;
+                    }
+
+                    .type {
+                        color: #8c0000;
+                        font-weight: bold;
+                    }
+                </style>
             </div>
             <br>
         </main>

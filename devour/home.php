@@ -127,13 +127,22 @@
                 <h1>LATEST UPDATES</h1>
 
                 <?php
-                    $filter = ['type' => 'announcement'];
-                    $options = [
-                        'sort' => ['created_at' => -1],
-                        'limit' => 3
+                    // Get unique announcements by iframe_link
+                    $pipeline = [
+                        ['$match' => [
+                            'type' => 'announcement'
+                        ]],
+                        ['$sort' => ['created_at' => -1]],
+                        // Group by iframe_link to remove duplicates
+                        ['$group' => [
+                            '_id' => '$iframe_link',
+                            'doc' => ['$first' => '$$ROOT']
+                        ]],
+                        ['$replaceRoot' => ['newRoot' => '$doc']],
+                        ['$limit' => 3]
                     ];
 
-                    $announcements = $AnnouncementLink->find($filter, $options);                    
+                    $announcements = $AnnouncementLink->aggregate($pipeline);                    
                 ?>
 
                 <section class="announcement-section">
@@ -141,8 +150,16 @@
                         <?php foreach ($announcements as $announcement): ?>
                         <div class="announcement-card">
                             <div class="iframe-wrapper">
+                                <?php
+                                    $iframeUrl = $announcement['iframe_link'];
+                                    // For Facebook posts, use the iframe_link directly as it's already in the correct format
+                                    if (strpos($iframeUrl, 'facebook.com') !== false && strpos($iframeUrl, 'plugins/post.php') === false) {
+                                        // Only transform URLs that aren't already in plugin format
+                                        $iframeUrl = "https://www.facebook.com/plugins/post.php?href=" . urlencode($iframeUrl) . "&show_text=true&width=500";
+                                    }
+                                ?>
                                 <iframe 
-                                    src="<?= htmlspecialchars($announcement['iframe_link']) ?>" 
+                                    src="<?= htmlspecialchars($iframeUrl) ?>" 
                                     width="500" 
                                     height="600" 
                                     style="border:none;overflow:hidden" 

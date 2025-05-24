@@ -1,5 +1,5 @@
 <?php
-    require 'vendor/autoload.php';
+    require __DIR__ . '/../vendor/autoload.php';
     use MongoDB\Client;
 
     $client = new Client("mongodb://localhost:27017");
@@ -13,4 +13,5 @@
     $About = $db->About;
     $OrgChart = $db->OrgChart;
     $AnnouncementLink = $db->AnnouncementLinks;
+    $Content = $db->Content; // Collection for news, blog posts, and Facebook posts
 ?>
