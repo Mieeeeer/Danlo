@@ -37,6 +37,14 @@ body {
     background-color: #2980b9;
 }
 
+.view-btn.red:hover {
+    background-color: #8f1e1e;
+}
+
+.view-btn.green:hover {
+    background-color: rgb(10, 31, 4);
+}
+
 
 .elem header {
   background: #69171A;
