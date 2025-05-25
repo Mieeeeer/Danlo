@@ -33,10 +33,10 @@
                 <li><a href="about us elem.php">About Us</a></li>
                 <li><a href="org chart elem.php">Organizational Chart</a></li>
                 <li><a href="">Programs Offered</a></li>
-                <li><a href="">Admission</a></li>
-                <li><a href="">Announcement</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="admission elem.php">Admission</a></li>
+                <li><a href="announcement elem.php">Announcement</a></li>
+                <li><a href="faqs elem.php">FAQs</a></li>
+                <li><a href="contact us elem.php">Contact Us</a></li>
             </ul>
         </nav>
 

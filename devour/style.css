@@ -1099,13 +1099,20 @@ nav a {
   text-align: center;
 }
 
-.faqs-section .top-nav {
+.faqs-section-hs h2 {
+  color: #0A771A;
+  font-size: 48px;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.faqs-section .top-nav, .faqs-section-hs .top-nav {
   background-color: #D9D9D9;
   padding: 1rem;
   width: 75%;
 }
 
-.faqs-section .top-nav ul {
+.faqs-section .top-nav ul, .faqs-section-hs .top-nav ul {
   display: inline-flex;
   gap: 5px;
   background-color: #D9D9D9;
@@ -1125,7 +1132,18 @@ nav a {
   padding: 0 1rem;
 }
 
-.faqs-section .top-nav li a {
+.faqs-section-hs .top-nav li {
+  background-color: #004028;
+  height: 45px;
+  border-radius: 3px 3px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0;
+  padding: 0 1rem;
+}
+
+.faqs-section .top-nav li a, .faqs-section-hs .top-nav li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -1136,11 +1154,11 @@ nav a {
   text-align: left;
 }
 
-.faqs-section .top-nav li .active {
+.faqs-section .top-nav li .active, .faqs-section-hs .top-nav li .active {
   color: #FFAE00;
 }
 
-.faqs-section .top-nav li a:hover {
+.faqs-section .top-nav li a:hover, .faqs-section-hs .top-nav li a:hover {
   color: #FFAE00;
 }
 
@@ -1152,13 +1170,29 @@ nav a {
   padding: 1rem;
 }
 
+.faqs-section-hs .info-bar {
+  background: #A4A4A4;
+  color: #000000;
+  font-size: 14px;
+  border-top: 4px solid #0A771A;
+  padding: 1rem;
+}
+
+
 .faqs-section .divider {
   border-top: 5px dashed #d40000;
   margin: 2rem auto;
   width: 75%;
 }
 
-.faqs-section .most-popular-quest {
+.faqs-section-hs .divider {
+  border-top: 5px dashed #0A771A;
+  margin: 2rem auto;
+  width: 75%;
+}
+
+
+.faqs-section .most-popular-quest, .faqs-section-hs .most-popular-quest {
   background-color: #D9D9D9;
   margin: 2rem auto;
   padding: 1rem;
@@ -1173,7 +1207,14 @@ nav a {
   color: #E31818;    
 }
 
-.faqs-section .most-popular-quest .home-btn {
+.faqs-section-hs .most-popular-quest a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #0A771A;    
+}
+
+.faqs-section .most-popular-quest .home-btn, .faqs-section-hs .most-popular-quest .home-btn {
   display: inline-block;
   margin-top: 3.5rem;
   margin-bottom: 5rem;
@@ -1197,16 +1238,16 @@ nav a {
   margin: 0;
 }
 
-.faqs-section .faqs-section {
+.faqs-section .faqs-section, .faqs-section-hs .faqs-section-hs {
   padding: 2rem;
 }
 
-.faqs-section .faq-list {
+.faqs-section .faq-list, .faqs-section-hs .faq-list {
   list-style: none;
   padding: 0;
 }
 
-.faqs-section .faq-list li {
+.faqs-section .faq-list li, .faqs-section-hs .faq-list li {
   font-size: 14px;
   margin-bottom: 25px;
 }
@@ -1219,7 +1260,15 @@ nav a {
   display: block;
 }
 
-.faqs-section .to-all-qna {
+.faqs-section-hs .faq-list li strong {
+  color: #004028;
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+}
+
+.faqs-section .to-all-qna, .faqs-section-hs .to-all-qna {
   text-align: right;
   margin-top: 1rem;
   margin-right: 1rem;
@@ -1235,30 +1284,44 @@ nav a {
   border-radius: 5px;
 }
 
+.faqs-section-hs .show-more-btn {
+  display: inline-block;
+  padding: 0.75rem 0.2rem;
+  color: #004028;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 .faqs-section .show-more-btn:hover {
   color: #b30000;
 }
 
-.faqs-section .most-popular-quest .home-question {
+.faqs-section-hs .show-more-btn:hover {
+  color: #0A771A;
+}
+
+.faqs-section .most-popular-quest .home-question, .faqs-section-hs .most-popular-quest .home-question {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.faqs-section .most-popular-quest .home-question .arrow {
+.faqs-section .most-popular-quest .home-question .arrow, .faqs-section-hs .most-popular-quest .home-question .arrow {
   color: #000000;
   font-weight: 900;
   font-size: 20px;
 }
 
-.faqs-section .most-popular-quest .home-question .question-name {
+.faqs-section .most-popular-quest .home-question .question-name, .faqs-section-hs .most-popular-quest .home-question .question-name {
   color: #333333;
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
 }
 
-.faqs-section .most-popular-quest .faq-view .question {
+.faqs-section .most-popular-quest .faq-view .question, .faqs-section-hs .most-popular-quest .faq-view .question {
   color: #000000;
   font-weight: bold;
   font-size: 26px;
@@ -1266,7 +1329,8 @@ nav a {
   margin-bottom: 0;
 }
 
-.faqs-section .most-popular-quest .faq-view .published {
+.faqs-section .most-popular-quest .faq-view .published, 
+.faqs-section-hs .most-popular-quest .faq-view .published {
   color: #5E5E5E;
   font-size: 14px;
   text-decoration: none;
@@ -1274,7 +1338,8 @@ nav a {
   margin-bottom: 0;
 }
 
-.faqs-section .most-popular-quest .faq-view .answer {
+.faqs-section .most-popular-quest .faq-view .answer,
+.faqs-section-hs .most-popular-quest .faq-view .answer {
   color: #000000;
   font-size: 16px;
   text-decoration: none;
@@ -1284,7 +1349,8 @@ nav a {
 }
 
 
-.faqs-section .to-feedback-response {
+.faqs-section .to-feedback-response, 
+.faqs-section-hs .to-feedback-response  {
   display: flex;
   justify-content: flex-end;   
   align-items: center; 
@@ -1293,7 +1359,8 @@ nav a {
   margin-top: 2.5rem;   
 }
 
-.faqs-section .to-feedback-response .feedback-question {
+.faqs-section .to-feedback-response .feedback-question, 
+.faqs-section-hs .to-feedback-response .feedback-question {
   font-size: 24px;
   font-weight: bold;
   margin: 0;       
@@ -1314,21 +1381,38 @@ nav a {
   white-space: nowrap;   
 }
 
-.faqs-section .most-popular-quest .feedback-submitted {
+.faqs-section-hs .to-feedback-response .feedback-yes-btn,
+.faqs-section-hs .to-feedback-response .feedback-no-btn {
+  padding: 6px 12px;
+  background-color: #004028; 
+  height: 100%;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;   
+}
+
+.faqs-section .most-popular-quest .feedback-submitted,
+.faqs-section-hs .most-popular-quest .feedback-submitted {
   font-size: 32px;
 }
 
 .faqs-section .most-popular-quest .feedback-message .thankyou-msg,
-.faqs-section .most-popular-quest .feedback-message .result-msg {
+.faqs-section-hs .most-popular-quest .feedback-message .result-msg {
   font-size: 14px;
 }
 
-.faqs-section .most-popular-quest .clarity-msg {
+.faqs-section .most-popular-quest .clarity-msg,
+.faqs-section-hs .most-popular-quest .clarity-msg {
   font-size: 20px;
   text-align: center;
 }
 
-.faqs-section .most-popular-quest .faq-form {
+.faqs-section .most-popular-quest .faq-form,
+.faqs-section-hs .most-popular-quest .faq-form {
   max-width: 100%;
   margin: 0 auto;
   display: flex;
@@ -1336,12 +1420,15 @@ nav a {
   gap: 12px;
 }
 
-.faqs-section .most-popular-quest .faq-form label {
+.faqs-section .most-popular-quest .faq-form label,
+.faqs-section-hs .most-popular-quest .faq-form label {
   font-weight: bold;
 }
 
 .faqs-section .most-popular-quest .faq-form input,
-.faqs-section .most-popular-quest .faq-form textarea {
+.faqs-section .most-popular-quest .faq-form textarea,
+.faqs-section-hs .most-popular-quest .faq-form input,
+.faqs-section-hs .most-popular-quest .faq-form textarea {
   padding: 10px;
   border: 1px solid #999;
   border-radius: 4px;
@@ -1350,7 +1437,8 @@ nav a {
   box-sizing: border-box;
 }
 
-.faqs-section .most-popular-quest .faq-form .disclaimer {
+.faqs-section .most-popular-quest .faq-form .disclaimer,
+.faqs-section-hs .most-popular-quest .faq-form .disclaimer {
   font-size: 0.85rem;
   color: #444;
   margin-top: 10px;
@@ -1370,6 +1458,20 @@ nav a {
   align-self: start;
 }
 
+.faqs-section-hs .most-popular-quest .submit-btn {
+  background-color: #004028;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+  align-self: start;
+}
+
+.faqs-section .most-popular-quest .submit-btn:hover,
 .faqs-section .most-popular-quest .submit-btn:hover {
   color: #FFAE00;
 }

@@ -33,10 +33,10 @@
                 <li><a href="about us elem.php">About Us</a></li>
                 <li><a href="org chart elem.php">Organizational Chart</a></li>
                 <li><a href="">Programs Offered</a></li>
-                <li><a href="">Admission</a></li>
-                <li><a href="">Announcement</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="admission elem.php">Admission</a></li>
+                <li><a href="announcement elem.php">Announcement</a></li>
+                <li><a href="faqs elem.php">FAQs</a></li>
+                <li><a href="contact us elem.php">Contact Us</a></li>
             </ul>
         </nav>
 
@@ -83,7 +83,7 @@
                         if ($FAQsQnA_IMG && isset($FAQsQnA_IMG['img_path'])) {
                             echo '<div class="qna-heading">';
                             echo '<img src="' . htmlspecialchars($FAQsQnA_IMG['img_path']) . '" alt="Image">';
-                            echo '<p>Most Popular Questions</p>';
+                            echo '<p>Published answers</p>';
                             echo '</div>';
                         }
                     ?>
@@ -107,7 +107,7 @@
                                 }
 
                                 echo '<li>';
-                                echo '<a href="faqs view elem.php?id=' . urlencode($faq['_id']) . '" style="text-decoration: none; color: inherit;">';
+                                echo '<a href="faqs view.php?id=' . urlencode($faq['_id']) . '" style="text-decoration: none; color: inherit;">';
                                 echo '<strong>' . $question . '</strong>';
                                 echo '<p style="font-weight: normal;">' . htmlspecialchars($truncated) . '</p>';
                                 echo '</a>';

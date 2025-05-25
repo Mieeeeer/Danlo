@@ -1,16 +1,54 @@
-<?php include 'db.php'; ?>
+<?php
+include 'db.php';
+
+$id = $_GET['id'] ?? null;
+
+
+if (!$id) {
+    echo "Invalid FAQ ID.";
+    exit;
+}
+
+try {
+    $objectId = new MongoDB\BSON\ObjectId($id);
+} catch (Exception $e) {
+    echo "Invalid FAQ ID format.";
+    exit;
+}
+
+$faq = $FAQs_HS->findOne(['_id' => $objectId]);
+
+if (!$faq) {
+    echo "FAQ not found.";
+    exit;
+}
+
+$date = $faq['createdAt'] ?? null;
+if (!empty($date)) {
+    if ($date instanceof MongoDB\BSON\UTCDateTime) {
+        $formattedDate = $date->toDateTime()->format('F j, Y g:i A');
+    } else {
+        $formattedDate = $date;
+    }
+} else {
+    $formattedDate = "Published time not found";
+}
+
+// Increment view count
+$FAQs_HS->updateOne(['_id' => $objectId], ['$inc' => ['views' => 1]]);
+?>
 
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Sta. Ana School</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sta. Ana School - FAQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="hs">
 
-    <body class="hs">
-        <!-- Header -->
-        <header>
+    <!-- Header -->
+    <header>
             <div class="logo-section">
                 <?php
                     $hsLogo = $Logo->findOne([
@@ -27,36 +65,37 @@
             </div>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="welcome hs.php">Welcome</a></li>
-                <li><a href="about us hs.php">About Us</a></li>
-                <li><a href="org chart hs.php">Organizational Chart</a></li>
-                <li><a href="">Programs Offered</a></li>
-                <li><a href="admission hs.php">Admission</a></li>
-                <li><a href="announcement hs.php">Announcement</a></li>
-                <li><a href="faqs hs.php">FAQs</a></li>
-                <li><a href="contact us hs.php">Contact Us</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="welcome hs.php">Welcome</a></li>
+            <li><a href="about us hs.php">About Us</a></li>
+            <li><a href="org chart hs.php">Organizational Chart</a></li>
+            <li><a href="">Programs Offered</a></li>
+            <li><a href="admission hs.php">Admission</a></li>
+            <li><a href="announcement hs.php">Announcement</a></li>
+            <li><a href="faqs hs.php">FAQs</a></li>
+            <li><a href="contact us hs.php">Contact Us</a></li>
+        </ul>
+    </nav>
 
-        <!-- Container -->
-        <main class="container">
-            <section class="faqs-section-hs">
-                <br>
+    <!-- Main Content -->
+    <main class="container">
+        <section class="faqs-section-hs">
+            <br>
+            
+            <h2>FREQUENTLY ASKED QUESTIONS</h2>
 
-                <h2>FREQUENTLY ASKED QUESTIONS</h2>
-
-                    <header class="top-nav">
+                <header class="top-nav">
                         <nav>
                             <ul>
-                                <li><a href="faqs hs.php" class="active">Home</a></li>
+                                <li><a href="faqs elem.php" class="active">Home</a></li>
                                 <li><a href="faqs ask question hs.php">Ask a Question</a></li>
                             </ul>
                         </nav>
                         <div class="info-bar">
                         <?php
-                                $FAQsDescription = $FAQs_HS->findOne([
+                                $FAQsDescription = $FAQs->findOne([
                                     'type' => 'faqs',
                                     'title' => 'faqs-description'
                                 ]);
@@ -68,64 +107,32 @@
                         </div>
                     </header>
 
-                <div class="divider"></div>
+                    <div class="divider"></div>
+                <div class="most-popular-quest">
 
-            <div class="most-popular-quest">
-                <?php
-                    $FAQsQnA_IMG = $FAQs->findOne([
-                        'type' => 'faqs',
-                        'title' => 'faqs-qna-img'
-                    ]);
+                    <div class="home-question">
+                        <a class="home-btn-view" href="faqs hs.php">Home</a>
+                        <p class="arrow">></p>
+                        <a class="question-name" href="faqs all hs.php"><?= htmlspecialchars($faq['question']) ?></a>
+                    </div>
 
-                    if ($FAQsQnA_IMG && isset($FAQsQnA_IMG['img_path'])) {
-                        echo '<div class="qna-heading">';
-                        echo '<img src="' . htmlspecialchars($FAQsQnA_IMG['img_path']) . '" alt="Image">';
-                        echo '<p>Most Popular Questions</p>';
-                        echo '</div>';
-                    }
-                ?>
+                    <article class="faq-view">
+                        <h3 class="question"><?= htmlspecialchars($faq['question']) ?></h3>
+                        <p class="published">Published at <?= htmlspecialchars($formattedDate) ?></p>
+                        <p class="answer"><?= nl2br(htmlspecialchars($faq['answer'])) ?></p>
+                    </article>
 
-                <?php
-                    $popularFaqs = $FAQs_HS->find(
-                        ['published' => true],
-                        [
-                            'sort' => ['views' => -1],
-                            'limit' => 5
-                        ]
-                    );
-
-                    echo '<ul class="faq-list">';
-                    foreach ($popularFaqs as $faq) {
-                        $question = htmlspecialchars($faq['question']);
-                        $answer = strip_tags($faq['answer']);
-                        $maxLength = 300;
-
-                        if (strlen($answer) > $maxLength) {
-                            $truncated = substr($answer, 0, strrpos(substr($answer, 0, $maxLength), ' ')) . '...';
-                        } else {
-                            $truncated = $answer;
-                        }
-
-                        echo '<li>';
-                        echo '<a href="faqs view hs.php?id=' . urlencode((string)$faq['_id']) . '" style="text-decoration: none; color: inherit;">';
-                        echo '<strong>' . $question . '</strong>';
-                        echo '<p style="font-weight: normal;">' . htmlspecialchars($truncated) . '</p>';
-                        echo '</a>';
-                        echo '</li>';
-                    }
-                    echo '</ul>';
-                ?>
-                    <div class="to-all-qna">
-                        <a class="show-more-btn" href="faqs all hs.php">Show More Published Answers</a>
-                        <a class="show-more-btn" href="faqs all hs.php">></a>
+                    <div class="to-feedback-response">
+                        <p class="feedback-question">Is this answer helpful?</p>
+                        <a class="feedback-yes-btn" href="faqs feedback hs.php?feedback=yes">YES</a>
+                        <a class="feedback-no-btn" href="faqs feedback hs.php?feedback=no">NO</a>
                     </div>
                 </div>
-            </section>
-            <br>
-        </main>
+        </section>
+        <br>
+    </main>
 
-       
-        <!-- Footer -->
+     <!-- Footer -->
         <footer>
             <div class="footer-info">
                 <div class="contact">
@@ -198,6 +205,5 @@
             </div>            
         </footer>
 
-
-    </body>
+</body>
 </html>

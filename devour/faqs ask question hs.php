@@ -23,12 +23,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     ];
 
     try {
-        $result = $FAQs_Submissions->insertOne($document);
+        $result = $FAQs_Submissions_HS->insertOne($document);
         $successMsg = "Your question has been submitted successfully!";
         $referenceId = (string)$result->getInsertedId();
         echo "<script>
                 setTimeout(function() {
-                    window.location.href = 'faqs ask confirmation.php?ref={$referenceId}';
+                    window.location.href = 'faqs ask confirmation hs.php?ref={$referenceId}';
                 }, 5);
               </script>";
     } catch (Exception $e) {
@@ -44,56 +44,56 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <title>Sta. Ana School - FAQ</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="elem">
+<body class="hs">
 
     <!-- Header -->
     <header>
             <div class="logo-section">
                 <?php
-                    $elemLogo = $Logo->findOne([
+                    $hsLogo = $Logo->findOne([
                         'type' => 'school_logo',
-                        'title' => 'elem_logo'
+                        'title' => 'hs_logo'
                     ]);
 
-                    if ($elemLogo && isset($elemLogo['img_path'])) {
-                        echo '<img src="' . htmlspecialchars($elemLogo['img_path']) . '" alt="Image">';
+                    if ($hsLogo && isset($hsLogo['img_path'])) {
+                        echo '<img src="' . htmlspecialchars($hsLogo['img_path']) . '" alt="Image">';
                     }
                 ?>
 
-                <h1>STA. ANA CENTRAL ELEMENTARY SCHOOL</h1>
+                <h1>STA. ANA NATIONAL HIGH SCHOOL</h1>
             </div>
         </header>
 
     <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="welcome elem.php">Welcome</a></li>
-            <li><a href="about us elem.php">About Us</a></li>
-            <li><a href="org chart elem.php">Organizational Chart</a></li>
+            <li><a href="welcome hs.php">Welcome</a></li>
+            <li><a href="about us hs.php">About Us</a></li>
+            <li><a href="org chart hs.php">Organizational Chart</a></li>
             <li><a href="">Programs Offered</a></li>
-            <li><a href="admission elem.php">Admission</a></li>
-            <li><a href="announcement elem.php">Announcement</a></li>
-            <li><a href="faqs all elem.php">FAQs</a></li>
-            <li><a href="contact us elem.php">Contact Us</a></li>
+            <li><a href="admission hs.php">Admission</a></li>
+            <li><a href="announcement hs.php">Announcement</a></li>
+            <li><a href="faqs hs.php">FAQs</a></li>
+            <li><a href="contact us hs.php">Contact Us</a></li>
         </ul>
     </nav>
 
     <!-- Main Content -->
     <main class="container">
-        <section class="faqs-section">
+        <section class="faqs-section-hs">
             <br>
             <h2>FREQUENTLY ASKED QUESTIONS</h2>
 
                 <header class="top-nav">
                         <nav>
                             <ul>
-                                <li><a href="faqs elem.php">Home</a></li>
-                                <li><a href="faqs ask question.php" class="active">Ask a Question</a></li>
+                                <li><a href="faqs hs.php">Home</a></li>
+                                <li><a href="faqs ask question hs.php" class="active">Ask a Question</a></li>
                             </ul>
                         </nav>
                         <div class="info-bar">
                         <?php
-                                $FAQsDescription = $FAQs->findOne([
+                                $FAQsDescription = $FAQs_HS->findOne([
                                     'type' => 'faqs',
                                     'title' => 'faqs-description'
                                 ]);
@@ -160,24 +160,24 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 
                     <div class="logo-section-footer">
                         <?php
-                            $elemLogo = $Logo->findOne([
+                            $hsLogo = $Logo->findOne([
                                 'type' => 'school_logo',
-                                'title' => 'elem_logo'
+                                'title' => 'hs_logo'
                             ]);
 
-                            if ($elemLogo && isset($elemLogo['img_path'])) {
-                                echo '<img src="' . htmlspecialchars($elemLogo['img_path']) . '" alt="Image">';
+                            if ($hsLogo && isset($hsLogo['img_path'])) {
+                                echo '<img src="' . htmlspecialchars($hsLogo['img_path']) . '" alt="Image">';
                             }
                         ?>
 
-                    <h1>STA. ANA CENTRAL<br>ELEMENTARY SCHOOL</h1>
+                    <h1>STA. ANA NATIONAL<br>HIGH SCHOOL</h1>
                     </div>
 
                     <br><br>
             
                     <div class="contact-info">
                         <?php
-                            $titles = ['district_elem', 'city'];
+                            $titles = ['district_hs', 'city'];
       
                             foreach ($titles as $title) {
                                 $doc = $Contact->findOne(['type' => 'contact', 'title' => $title]);
@@ -191,7 +191,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <br>
 
                         <?php
-                            $titles = ['elem_contactNo', 'elem_email'];
+                            $titles = ['hs_contactNo', 'hs_email'];
       
                             foreach ($titles as $title) {
                                 $doc = $Contact->findOne(['type' => 'contact', 'title' => $title]);
@@ -205,18 +205,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 </div>
 
                 <div class="copyright">
-                    <p>Copyright © 2025 Sta. Ana Central Elementary School. All Rights Reserved</p>
+                    <p>Copyright © 2025 Sta. Ana National High School. All Rights Reserved</p>
                 </div>
 
                 <div class="maps">
                     <?php
-                        $elemMap = $Contact->findOne([
+                        $hsMap = $Contact->findOne([
                             'type' => 'maps',
-                            'title' => 'elem_maps'
+                            'title' => 'hs_maps'
                         ]);
 
-                        if ($elemMap && isset($elemMap['iframe_link']) && !empty($elemMap['iframe_link'])) {
-                            $iframeURL = htmlspecialchars($elemMap['iframe_link']);
+                        if ($hsMap && isset($hsMap['iframe_link']) && !empty($hsMap['iframe_link'])) {
+                            $iframeURL = htmlspecialchars($hsMap['iframe_link']);
                             echo '<iframe src="' . $iframeURL . '" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
                         } else {
                             echo '<p>Map not available.</p>';

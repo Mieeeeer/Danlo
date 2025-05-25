@@ -20,7 +20,7 @@
                             <li><a href="">Programs Offered</a></li>
                             <li><a href="admission hs.php">Admission</a></li>
                             <li><a href="announcement hs.php">Announcement</a></li>
-                            <li><a href="">FAQs</a></li>
+                            <li><a href="faqs hs.php">FAQs</a></li>
                             <li><a href="contact us hs.php">Contact Us</a></li>
                         </ul>
                     </nav>

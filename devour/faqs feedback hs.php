@@ -7,51 +7,51 @@
     <title>Sta. Ana School - FAQ</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="elem">
+<body class="hs">
 
     <!-- Header -->
     <header>
             <div class="logo-section">
                 <?php
-                    $elemLogo = $Logo->findOne([
+                    $hsLogo = $Logo->findOne([
                         'type' => 'school_logo',
-                        'title' => 'elem_logo'
+                        'title' => 'hs_logo'
                     ]);
 
-                    if ($elemLogo && isset($elemLogo['img_path'])) {
-                        echo '<img src="' . htmlspecialchars($elemLogo['img_path']) . '" alt="Image">';
+                    if ($hsLogo && isset($hsLogo['img_path'])) {
+                        echo '<img src="' . htmlspecialchars($hsLogo['img_path']) . '" alt="Image">';
                     }
                 ?>
 
-                <h1>STA. ANA CENTRAL ELEMENTARY SCHOOL</h1>
+                <h1>STA. ANA NATIONAL HIGH SCHOOL</h1>
             </div>
         </header>
 
     <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="welcome elem.php">Welcome</a></li>
-            <li><a href="about us elem.php">About Us</a></li>
-            <li><a href="org chart elem.php">Organizational Chart</a></li>
+            <li><a href="welcome hs.php">Welcome</a></li>
+            <li><a href="about us hs.php">About Us</a></li>
+            <li><a href="org chart hs.php">Organizational Chart</a></li>
             <li><a href="">Programs Offered</a></li>
-            <li><a href="admission elem.php">Admission</a></li>
-            <li><a href="announcment elem.php">Announcement</a></li>
-            <li><a href="faqs all elem.php">FAQs</a></li>
-            <li><a href="contact us elem.php">Contact Us</a></li>
+            <li><a href="admission hs.php">Admission</a></li>
+            <li><a href="announcement hs.php">Announcement</a></li>
+            <li><a href="faqs hs.php">FAQs</a></li>
+            <li><a href="contact us hs.php">Contact Us</a></li>
         </ul>
     </nav>
 
     <!-- Main Content -->
     <main class="container">
-        <section class="faqs-section">
+        <section class="faqs-section-hs">
             <br>
             <h2>FREQUENTLY ASKED QUESTION</h2>
 
                 <header class="top-nav">
                         <nav>
                             <ul>
-                                <li><a href="faqs elem.php">Home</a></li>
-                                <li><a href="faqs ask question.php">Ask a Question</a></li>
+                                <li><a href="faqs hs.php">Home</a></li>
+                                <li><a href="faqs ask question hs.php">Ask a Question</a></li>
                             </ul>
                         </nav>
                         <div class="info-bar">

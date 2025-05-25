@@ -44,7 +44,7 @@
         <main class="container">
             <section class="faqs-section-hs">
                 <br>
-
+                
                 <h2>FREQUENTLY ASKED QUESTIONS</h2>
 
                     <header class="top-nav">
@@ -68,64 +68,59 @@
                         </div>
                     </header>
 
-                <div class="divider"></div>
+                    <div class="divider"></div>
 
-            <div class="most-popular-quest">
-                <?php
-                    $FAQsQnA_IMG = $FAQs->findOne([
-                        'type' => 'faqs',
-                        'title' => 'faqs-qna-img'
-                    ]);
+                <div class="most-popular-quest">
 
-                    if ($FAQsQnA_IMG && isset($FAQsQnA_IMG['img_path'])) {
-                        echo '<div class="qna-heading">';
-                        echo '<img src="' . htmlspecialchars($FAQsQnA_IMG['img_path']) . '" alt="Image">';
-                        echo '<p>Most Popular Questions</p>';
-                        echo '</div>';
-                    }
-                ?>
+                    <a class="home-btn" href="faqs hs.php">Home</a>
 
-                <?php
-                    $popularFaqs = $FAQs_HS->find(
-                        ['published' => true],
-                        [
-                            'sort' => ['views' => -1],
-                            'limit' => 5
-                        ]
-                    );
+                    <?php
+                        $FAQsQnA_IMG = $FAQs_HS->findOne([
+                            'type' => 'faqs',
+                            'title' => 'faqs-qna-img'
+                        ]);
 
-                    echo '<ul class="faq-list">';
-                    foreach ($popularFaqs as $faq) {
-                        $question = htmlspecialchars($faq['question']);
-                        $answer = strip_tags($faq['answer']);
-                        $maxLength = 300;
-
-                        if (strlen($answer) > $maxLength) {
-                            $truncated = substr($answer, 0, strrpos(substr($answer, 0, $maxLength), ' ')) . '...';
-                        } else {
-                            $truncated = $answer;
+                        if ($FAQsQnA_IMG && isset($FAQsQnA_IMG['img_path'])) {
+                            echo '<div class="qna-heading">';
+                            echo '<img src="' . htmlspecialchars($FAQsQnA_IMG['img_path']) . '" alt="Image">';
+                            echo '<p>Published answers</p>';
+                            echo '</div>';
                         }
+                    ?>
 
-                        echo '<li>';
-                        echo '<a href="faqs view hs.php?id=' . urlencode((string)$faq['_id']) . '" style="text-decoration: none; color: inherit;">';
-                        echo '<strong>' . $question . '</strong>';
-                        echo '<p style="font-weight: normal;">' . htmlspecialchars($truncated) . '</p>';
-                        echo '</a>';
-                        echo '</li>';
-                    }
-                    echo '</ul>';
-                ?>
-                    <div class="to-all-qna">
-                        <a class="show-more-btn" href="faqs all hs.php">Show More Published Answers</a>
-                        <a class="show-more-btn" href="faqs all hs.php">></a>
-                    </div>
+                    <ul class="faq-list">
+                        <?php
+                            $allFaqs = $FAQs_HS->find(
+                                ['published' => true],
+                                ['sort' => ['question' => 1]]
+                            );
+
+                            foreach ($allFaqs as $faq) {
+                                $question = htmlspecialchars($faq['question']);
+                                $answer = strip_tags($faq['answer']);
+                                $maxLength = 300;
+
+                                if (strlen($answer) > $maxLength) {
+                                    $truncated = substr($answer, 0, strrpos(substr($answer, 0, $maxLength), ' ')) . '...';
+                                } else {
+                                    $truncated = $answer;
+                                }
+
+                                echo '<li>';
+                                echo '<a href="faqs view hs.php?id=' . urlencode($faq['_id']) . '" style="text-decoration: none; color: inherit;">';
+                                echo '<strong>' . $question . '</strong>';
+                                echo '<p style="font-weight: normal;">' . htmlspecialchars($truncated) . '</p>';
+                                echo '</a>';
+                                echo '</li>';
+                            }
+                        ?>
+                    </ul>
                 </div>
             </section>
             <br>
         </main>
 
-       
-        <!-- Footer -->
+         <!-- Footer -->
         <footer>
             <div class="footer-info">
                 <div class="contact">
@@ -197,7 +192,5 @@
                 </div>
             </div>            
         </footer>
-
-
     </body>
 </html>

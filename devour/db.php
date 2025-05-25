@@ -17,5 +17,6 @@
     $Admission = $db->Admission;
     $FAQs = $db->FAQs_Elem;
     $FAQs_Submissions = $db->FAQs_Submissions;
+    $FAQs_Submissions_HS = $db->FAQs_Submissions_HS;
     $FAQs_HS = $db->FAQs_HS;
 ?>
