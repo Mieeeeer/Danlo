@@ -31,6 +31,7 @@ if (isset($Content)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - Content Management</title>
+    <p>Welcome, <?php echo htmlspecialchars($admin['FirstName'] . ' ' . $admin['LastName']); ?>!</p>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
@@ -199,6 +200,7 @@ if (isset($Content)) {
             color: #EB0000;
         }
     </style>
+    
 </head>
 <body>
     <nav>
@@ -264,6 +266,14 @@ if (isset($Content)) {
                 <p>Embed and manage Facebook posts on the website.</p>
                 <a href="admin-facebook.php" class="btn">Manage FB Posts</a>
             </div>
+
+            <div class="dashboard-card">
+                <i class='bx bx-edit icon'></i>
+                <h3>Edit Home Page</h3>
+             <p>Update the homepage content (images, texts, announcements).</p>
+            <a href="edithome.php" class="btn">Edit Home</a>
+        </div>
+
 
             <div class="dashboard-card">
                 <i class='bx bxl-blogger icon'></i>
