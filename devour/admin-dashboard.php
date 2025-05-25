@@ -276,6 +276,14 @@ if (isset($Content)) {
 
 
             <div class="dashboard-card">
+                <i class='bx bx-edit icon'></i>
+                <h3>Edit Home Page</h3>
+             <p>Update the Highschool Page content (images, texts, announcements).</p>
+            <a href="editHS.php" class="btn">Edit Home</a>
+        </div>
+
+
+            <div class="dashboard-card">
                 <i class='bx bxl-blogger icon'></i>
                 <h3>Blog Management</h3>
                 <p>Write and publish blog articles about school events and activities.</p>
