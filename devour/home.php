@@ -10,12 +10,7 @@
 
     <body class="home">
         <!-- Header -->
-<header class="site-header">
-    <h1 class="school-name">STA. ANA</h1>
-    <div class="login">
-        <a href="login.php" class="login-btn">Login</a>
-    </div>
-</header>
+        <header><h1>STA. ANA</h1></header>
 
         <!-- Container -->
         <main class="container">

@@ -8,22 +8,22 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="elem">
+    <body class="hs">
         <!-- Header -->
         <header>
             <div class="logo-section">
                 <?php
-                    $elemLogo = $Logo->findOne([
+                    $hsLogo = $Logo->findOne([
                         'type' => 'school_logo',
-                        'title' => 'elem_logo'
+                        'title' => 'hs_logo'
                     ]);
 
-                    if ($elemLogo && isset($elemLogo['img_path'])) {
-                        echo '<img src="' . htmlspecialchars($elemLogo['img_path']) . '" alt="Image">';
+                    if ($hsLogo && isset($hsLogo['img_path'])) {
+                        echo '<img src="' . htmlspecialchars($hsLogo['img_path']) . '" alt="Image">';
                     }
                 ?>
 
-                <h1>STA. ANA CENTRAL ELEMENTARY SCHOOL</h1>
+                <h1>STA. ANA NATIONAL HIGH SCHOOL</h1>
             </div>
         </header>
 
@@ -33,99 +33,98 @@
                 <li><a href="about us elem.php">About Us</a></li>
                 <li><a href="org chart elem.php">Organizational Chart</a></li>
                 <li><a href="">Programs Offered</a></li>
-                <li><a href="admission elem.php">Admission</a></li>
-                <li><a href="announcement elem.php">Announcement</a></li>
+                <li><a href="">Admission</a></li>
+                <li><a href="">Announcement</a></li>
                 <li><a href="">FAQs</a></li>
-                <li><a href="contact us elem.php">Contact Us</a></li>
+                <li><a href="">Contact Us</a></li>
             </ul>
         </nav>
 
         <!-- Container -->
         <main class="container">
-            <div class="container-content">
-                <section class="elem-intro">
-                    <br>
-                    <h2>Sta. Ana Central Elementary School</h2>
+            <section class="faqs-section">
+                <br>
 
-                    <?php
-                        $introElem = $About->findOne([
-                            'type' => 'about',
-                            'title' => 'intro_elem'
-                        ]);
+                <h2>FREQUENTLY ASKED QUESTIONS</h2>
 
-                        if ($introElem && isset($introElem['description'])) {
-                            echo '<p>' . nl2br(htmlspecialchars($introElem['description'])) . '</p>';
-                        } 
-                    ?>
-                </section>
-
-                <section class="elem-about-img">
-                    <?php
-                        $aboutElemImage = $About->findOne([
-                            'type' => 'about',
-                            'title' => 'about-elem-img'
-                        ]);
-
-                        if ($aboutElemImage && isset($aboutElemImage['img_path'])) {
-                            echo '<img src="' . htmlspecialchars($aboutElemImage['img_path']) . '" alt="Image">';
-                        }
-                    ?>
-                </section>
-
-                <section class="elem-background">
-                    <?php
-                        $backgroundElem = $About->findOne([
-                            'type' => 'about',
-                            'title' => 'background_elem'
-                        ]);
-
-                        if ($backgroundElem && isset($backgroundElem['description'])) {
-                            echo '<p>' . nl2br(htmlspecialchars($backgroundElem['description'])) . '</p>';
-                        } 
-                    ?>
-                </section>
-
-                <section class="elem-history">
-                    <div class="elem-history-title">
-                        <h3>History of SACES</h3>
-                    </div>
-
-                    <?php
-                        $historyElem = $About->findOne([
-                            'type' => 'about',
-                            'title' => 'history_elem'
-                        ]);
-
-                        if ($historyElem && isset($historyElem['description'])) {
-                            echo '<p>' . nl2br(htmlspecialchars($historyElem['description'])) . '</p>';
-                        } 
-                    ?>
-                </section>
-
-                <section class="elem-vms">
-                    <div class="elem-vms-title">
-                        <h3>Mission, Vision & Core Values</h3>    
-                    </div>
-                    
-                    <div class="vms-section">
+                    <header class="top-nav">
+                        <nav>
+                            <ul>
+                                <li><a href="faqs hs.php" class="active">Home</a></li>
+                                <li><a href="faqs ask question.php">Ask a Question</a></li>
+                            </ul>
+                        </nav>
+                        <div class="info-bar">
                         <?php
-                            $titles = ['vision', 'mission', 'core_values'];
-            
-                            foreach ($titles as $title) {
-                                $doc = $About->findOne(['type' => 'about', 'title' => $title]);
+                                $FAQsDescription = $FAQs_HS->findOne([
+                                    'type' => 'faqs',
+                                    'title' => 'faqs-description'
+                                ]);
 
-                                if ($doc && isset($doc['img_path'])) {
-                                    echo '<div class="about-card">';
-                                    echo '<img src="' . htmlspecialchars($doc['img_path']) . '" alt="' . ucfirst($title) . '" class="cards' . htmlspecialchars($title) . '">';
-                                    echo '</div>';
+                                if ($FAQsDescription && isset($FAQsDescription['description'])) {
+                                    echo '<p>' . nl2br(htmlspecialchars($FAQsDescription['description'])) . '</h2>';
                                 }
-                            }
-                        ?>
+                            ?>
+                        </div>
+                    </header>
+
+                <div class="divider"></div>
+
+            <div class="most-popular-quest">
+                <?php
+                    $FAQsQnA_IMG = $FAQs->findOne([
+                        'type' => 'faqs',
+                        'title' => 'faqs-qna-img'
+                    ]);
+
+                    if ($FAQsQnA_IMG && isset($FAQsQnA_IMG['img_path'])) {
+                        echo '<div class="qna-heading">';
+                        echo '<img src="' . htmlspecialchars($FAQsQnA_IMG['img_path']) . '" alt="Image">';
+                        echo '<p>Most Popular Questions</p>';
+                        echo '</div>';
+                    }
+                ?>
+
+                <?php
+                    $popularFaqs = $FAQs->find(
+                        ['published' => true],
+                        [
+                            'sort' => ['views' => -1],
+                            'limit' => 5
+                        ]
+                    );
+
+                    echo '<ul class="faq-list">';
+                    foreach ($popularFaqs as $faq) {
+                        $question = htmlspecialchars($faq['question']);
+                        $answer = strip_tags($faq['answer']);
+                        $maxLength = 300;
+
+                        if (strlen($answer) > $maxLength) {
+                            $truncated = substr($answer, 0, strrpos(substr($answer, 0, $maxLength), ' ')) . '...';
+                        } else {
+                            $truncated = $answer;
+                        }
+
+                        echo '<li>';
+                        echo '<a href="faqs view.php?id=' . urlencode((string)$faq['_id']) . '" style="text-decoration: none; color: inherit;">';
+                        echo '<strong>' . $question . '</strong>';
+                        echo '<p style="font-weight: normal;">' . htmlspecialchars($truncated) . '</p>';
+                        echo '</a>';
+                        echo '</li>';
+                    }
+                    echo '</ul>';
+                ?>
+                    <div class="to-all-qna">
+                        <a class="show-more-btn" href="faqs all elem.php">Show More Published Answers</a>
+                        <a class="show-more-btn" href="faqs all elem.php">></a>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
+            <br>
         </main>
 
+       
         <!-- Footer -->
         <footer>
             <div class="footer-info">
@@ -198,6 +197,7 @@
                 </div>
             </div>            
         </footer>
+
 
     </body>
 </html>

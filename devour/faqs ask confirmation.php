@@ -1,16 +1,16 @@
 <?php include 'db.php'; ?>
 
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Sta. Ana School</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sta. Ana School - FAQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="elem">
 
-    <body class="elem">
-        <!-- Header -->
-        <header>
+    <!-- Header -->
+    <header>
             <div class="logo-section">
                 <?php
                     $elemLogo = $Logo->findOne([
@@ -27,41 +27,70 @@
             </div>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="welcome elem.php">Welcome</a></li>
-                <li><a href="about us elem.php">About Us</a></li>
-                <li><a href="org chart elem.php">Organizational Chart</a></li>
-                <li><a href="">Programs Offered</a></li>
-                <li><a href="admission elem.php">Admission</a></li>
-                <li><a href="announcement elem.php">Announcement</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="contact us elem.php">Contact Us</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="welcome elem.php">Welcome</a></li>
+            <li><a href="about us elem.php">About Us</a></li>
+            <li><a href="org chart elem.php">Organizational Chart</a></li>
+            <li><a href="">Programs Offered</a></li>
+            <li><a href="">Admission</a></li>
+            <li><a href="">Announcement</a></li>
+            <li><a href="faqs all elem.php">FAQs</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
 
-        <!-- Container -->
-        <main class="container">
-            <div class="elem-org-chart-title">
-                <br><br>
-                <h1>ORGANIZATIONAL CHART</h1>
-            </div>
+    <!-- Main Content -->
+    <main class="container">
+        <section class="faqs-section">
+            <br>
+            
+            <h2>FREQUENTLY ASKED QUESTIONS</h2>
 
-            <div class="org-chart">
-                <?php
-                    $elemOrgChart = $OrgChart->findOne([
-                        'type' => 'org_chart',
-                        'title' => 'elem_org_chart'
-                    ]);
+                <header class="top-nav">
+                        <nav>
+                            <ul>
+                                <li><a href="faqs elem.php">Home</a></li>
+                                <li><a href="faqs ask question.php">Ask a Question</a></li>
+                            </ul>
+                        </nav>
+                        <div class="info-bar">
+                        <?php
+                                $FAQsDescription = $FAQs->findOne([
+                                    'type' => 'faqs',
+                                    'title' => 'faqs-description'
+                                ]);
 
-                    if ($elemOrgChart && isset($elemOrgChart['img_path'])) {
-                        echo '<img src="' . htmlspecialchars($elemOrgChart['img_path']) . '" alt="Image">';
-                    }
-                ?>
-            </div>
-        </main>
+                                if ($FAQsDescription && isset($FAQsDescription['description'])) {
+                                    echo '<p>' . nl2br(htmlspecialchars($FAQsDescription['description'])) . '</h2>';
+                                }
+                            ?>
+                        </div>
+                    </header>
 
-        <!-- Footer -->
+                    <div class="divider"></div>
+                <div class="most-popular-quest">
+                    
+                    <p class="feedback-submitted">Your question has been submitted!</p>
+
+                        <div class="feedback-message">
+
+                            <?php
+                                $referenceId = isset($_GET['ref']) ? htmlspecialchars($_GET['ref']) : 'Unavailable';
+                            ?>
+                                <p class="thankyou-msg">Thanks for submitting your question. Use this reference if you need to follow up on your enquiry: <strong><?= $referenceId ?></strong></p>
+
+                                <p class="result-msg">A member of our support team will respond to your enquiry.</p>
+                                
+                        </div>
+
+                </div>
+        </section>
+        <br>
+    </main>
+
+     <!-- Footer -->
         <footer>
             <div class="footer-info">
                 <div class="contact">
@@ -134,5 +163,5 @@
             </div>            
         </footer>
 
-    </body>
+</body>
 </html>

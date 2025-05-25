@@ -18,8 +18,8 @@
                             <li><a href="about us hs.php">About Us</a></li>
                             <li><a href="org chart hs.php">Organizational Chart</a></li>
                             <li><a href="">Programs Offered</a></li>
-                            <li><a href="">Admission</a></li>
-                            <li><a href="">Announcement</a></li>
+                            <li><a href="admission hs.php">Admission</a></li>
+                            <li><a href="announcement hs.php">Announcement</a></li>
                             <li><a href="">FAQs</a></li>
                             <li><a href="contact us hs.php">Contact Us</a></li>
                         </ul>

@@ -13,4 +13,9 @@
     $About = $db->About;
     $OrgChart = $db->OrgChart;
     $AnnouncementLink = $db->AnnouncementLinks;
+    $Announcements = $db->Announcement;
+    $Admission = $db->Admission;
+    $FAQs = $db->FAQs_Elem;
+    $FAQs_Submissions = $db->FAQs_Submissions;
+    $FAQs_HS = $db->FAQs_HS;
 ?>

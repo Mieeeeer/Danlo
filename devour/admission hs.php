@@ -43,88 +43,127 @@
         <!-- Container -->
         <main class="container">
             <div class="container-content">
-                <section class="hs-intro">
-                    <br>
-                    <h2>Sta. Ana National High School</h2>
+                <div class="hs-admission-title">
+                    <br><br>
+                    <h1>Prospective Students</h1>
 
                     <?php
-                        $introHs = $About->findOne([
-                            'type' => 'about',
-                            'title' => 'intro_hs'
+                        $admissionHs = $Admission->findOne([
+                            'type' => 'admission',
+                            'title' => 'admission-description',
+                            'school-level' => 'highschool'
                         ]);
 
-                        if ($introHs && isset($introHs['description'])) {
-                            echo '<p>' . nl2br(htmlspecialchars($introHs['description'])) . '</p>';
+                        if ($admissionHs && isset($admissionHs['description'])) {
+                            echo '<p>' . nl2br(htmlspecialchars($admissionHs['description'])) . '</p>';
                         } 
                     ?>
-                </section>
+                </div>
 
-                <section class="hs-about-img">
-                    <?php
-                        $aboutHsImage = $About->findOne([
-                            'type' => 'about',
-                            'title' => 'about-hs-img'
-                        ]);
+                <section class="hs-student-header">
+                        <div class="hs-student-title">
+                            <h3>1. Incoming Students (Grade 7 and Grade 11)</h3>
+                        </div>
 
-                        if ($aboutHsImage && isset($aboutHsImage['img_path'])) {
-                            echo '<img src="' . htmlspecialchars($aboutHsImage['img_path']) . '" alt="Image">';
-                        }
-                    ?>
-                </section>
-
-                <section class="hs-background">
-                    <?php
-                        $backgroundHs = $About->findOne([
-                            'type' => 'about',
-                            'title' => 'background_hs'
-                        ]);
-
-                        if ($backgroundHs && isset($backgroundHs['description'])) {
-                            echo '<p>' . nl2br(htmlspecialchars($backgroundHs['description'])) . '</p>';
-                        } 
-                    ?>
-                </section>
-
-                <section class="hs-history">
-                    <div class="hs-history-title">
-                        <h3>History of SANHS</h3>
-                    </div>
-
-                    <?php
-                        $historyHs = $About->findOne([
-                            'type' => 'about',
-                            'title' => 'history_hs'
-                        ]);
-
-                        if ($historyHs && isset($historyHs['description'])) {
-                            echo '<p>' . nl2br(htmlspecialchars($historyHs['description'])) . '</p>';
-                        } 
-                    ?>
-                </section>
-
-                <section class="hs-vms">
-                    <div class="hs-vms-title">
-                        <h3>Mission, Vision & Core Values</h3>    
-                    </div>
-                    
-                    <div class="vms-section">
                         <?php
-                            $titles = ['vision', 'mission', 'core_values'];
-            
-                            foreach ($titles as $title) {
-                                $doc = $About->findOne(['type' => 'about', 'title' => $title]);
+                            $student = $Admission->findOne([
+                                'type' => 'admission',
+                                'title' => 'admission-incomming-students-description'
+                            ]);
 
-                                if ($doc && isset($doc['img_path'])) {
-                                    echo '<div class="about-card">';
-                                    echo '<img src="' . htmlspecialchars($doc['img_path']) . '" alt="' . ucfirst($title) . '" class="cards' . htmlspecialchars($title) . '">';
-                                    echo '</div>';
-                                }
+                            if ($student && isset($student['description'])) {
+                                echo '<p>' . nl2br(htmlspecialchars($student['description'])) . '</p>';
+                            } 
+                        ?>
+                </section>
+
+                <section class="hs-student-header">
+                        <div class="hs-student-title">
+                            <h3>2. Transferees</h3>
+                        </div>
+
+                        <?php
+                            $student = $Admission->findOne([
+                                'type' => 'admission',
+                                'title' => 'Transferees-HS'
+                            ]);
+
+                            if ($student && isset($student['description'])) {
+                                echo '<p>' . nl2br(htmlspecialchars($student['description'])) . '</p>';
+                            } 
+                        ?>
+                </section>
+
+                <section class="hs-student-header">
+                        <div class="hs-student-title">
+                            <h3>3. Continuing Students (Grade 8 - 10 and Grade 12)</h3>
+                        </div>
+
+                        <?php
+                            $student = $Admission->findOne([
+                                'type' => 'admission',
+                                'title' => 'Continuing Students'
+                            ]);
+
+                            if ($student && isset($student['description'])) {
+                                echo '<p>' . nl2br(htmlspecialchars($student['description'])) . '</p>';
+                            } 
+                        ?>
+                </section>
+
+                <br>
+
+                
+                <section class="enrollment-process-hs">
+                    <br><br>
+                    <h1>Enrollment Process</h1>
+
+                    <div class="enrollment-process-img">
+                        <?php
+                            $enrollmentProcess = $Admission->findOne([
+                                'type' => 'admission',
+                                'title' => 'admission-hs-img'
+                            ]);
+
+                            if ($enrollmentProcess && isset($enrollmentProcess['img_path'])) {
+                                echo '<img src="' . htmlspecialchars($enrollmentProcess['img_path']) . '" alt="Image">';
                             }
                         ?>
                     </div>
                 </section>
+                
+                <section class="downloadable-forms-header">
+                    <div class="downloadable-forms-title-hs">
+                        <h3>Downloadable Forms</h3>
+                    </div>
+
+                    <?php $forms = $Admission->find([
+                        'type' => 'download-forms',
+                        'school-level' => 'highschool'
+                    ]); ?>
+
+                    <div class="forms-grid">
+                        <?php
+                            $formArray = iterator_to_array($forms);
+                            $half = ceil(count($formArray) / 2);
+                            $columns = array_chunk($formArray, $half);
+                            
+                            for ($i = 0; $i < 2; $i++) {
+                                echo '<div>';
+                                foreach ($columns[$i] as $form) {
+                                    $title = htmlspecialchars($form['title']);
+                                    $path = htmlspecialchars($form['file_path']);
+                                    echo "<div class='form-item'><a href='$path' download>$title</a></div>";
+                                }
+                                echo '</div>';
+                            }
+                        ?>
+
+                        <br>
+
+                    </div>
+                </section>
             </div>
-        </main>
 
         <!-- Footer -->
         <footer>
