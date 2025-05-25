@@ -1,4 +1,14 @@
 <?php
+
+session_start();
+
+if (!isset($_SESSION['admin_id'])) {
+    header("Location: login.php");
+    $_SESSION['login_error'] = "You must log in to access this page.";
+    exit();
+}
+
+
 include 'db.php';
 
 // Handle form submission
@@ -325,7 +335,7 @@ $fb_posts = $Content->find(['type' => 'facebook_post'], [
                 <li><a href="admin-facebook.php" class="active">Facebook</a></li>
                 <li><a href="admin-blog.php">Blog</a></li>
                 <li><a href="home.php">View Site</a></li>
-                <li><a href="../logout.php">Logout</a></li>
+                <li><a href="logout.php">Logout</a></li>
             </ul>
         </div>
     </nav>
