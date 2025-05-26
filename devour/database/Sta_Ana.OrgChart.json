@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "682ea83af6631491e5017fd1"
+  },
+  "type": "org_chart",
+  "title": "elem_org_chart",
+  "img_path": "images/elem org chart.png"
+},
+{
+  "_id": {
+    "$oid": "682ea849f6631491e5017fd3"
+  },
+  "type": "org_chart",
+  "title": "hs_org_chart",
+  "img_path": "images/hs org chart.png"
+}]

@@ -1,0 +1,539 @@
+[{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdefa"
+  },
+  "type": "program_intro",
+  "title": "program-header",
+  "description": "Why Study Elementary School in Sta. Ana Central?"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdefb"
+  },
+  "type": "program_intro",
+  "title": "program-content",
+  "description": "Sta. Ana Central Elementary School is a great place for children to begin their learning journey. We provide a strong foundation in academics, values, and life skills through quality education and caring teachers. Our school is known for its safe and welcoming environment where students are encouraged to be curious, creative, and confident. With support from both the school and the community, every child is given the opportunity to grow and reach their full potential. At Sta. Ana Central, we believe in shaping young minds and preparing them for a bright future."
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdefc"
+  },
+  "type": "core_subject",
+  "title": "core-subject-header",
+  "description": "Core Subjects"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdefd"
+  },
+  "type": "core_subject",
+  "title": "core-subject-subjects-1",
+  "description": "Mathematics"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdefe"
+  },
+  "type": "core_subject",
+  "title": "core-subject-description-1",
+  "description": "At Sta. Ana Central Elementary School, Mathematics is more than just numbers – it's a way of thinking and solving problems. We help students build strong math skills through fun, engaging, and practical activities that make learning exciting. Our dedicated teachers guide students step by step, making sure they understand basic concepts and can apply them in real life. Whether it’s through games, group work, or hands-on exercises, we make math meaningful and enjoyable. We aim to boost every child’s confidence in solving problems and prepare them for success in the next stages of learning."
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdeff"
+  },
+  "type": "core_subject",
+  "title": "core-subject-subjects-2",
+  "description": "Science"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf00"
+  },
+  "type": "core_subject",
+  "title": "core-subject-description-2",
+  "description": "Science at Sta. Ana Central Elementary School sparks curiosity and encourages young minds to explore the world around them. Through fun experiments, hands-on activities, and exciting lessons, students learn how things work and why they happen. Our teachers create a learning environment where questions are welcome, and discovery is part of every lesson. From understanding nature and the human body to exploring weather, energy, and space, we help students build a strong foundation in science. We aim to develop critical thinking and a love for learning that will guide them as future scientists, innovators, and problem-solvers."
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf01"
+  },
+  "type": "core_subject",
+  "title": "core-subject-subjects-3",
+  "description": "English"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf02"
+  },
+  "type": "core_subject",
+  "title": "core-subject-description-3",
+  "description": "At Sta. Ana Central Elementary School, we believe that strong English skills open doors to many opportunities. Our English program helps students become confident readers, writers, speakers, and listeners. Through stories, reading activities, writing exercises, and fun games, we make learning the language enjoyable and meaningful. We focus on building vocabulary, grammar, comprehension, and communication skills in ways that are easy to understand and apply. With the guidance of our caring teachers, students are encouraged to express themselves clearly and creatively, preparing them to succeed in school and in life."
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf03"
+  },
+  "type": "core_subject",
+  "title": "core-subject-subjects-4",
+  "description": "Filipino"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf04"
+  },
+  "type": "core_subject",
+  "title": "core-subject-description-4",
+  "description": "Sa Sta. Ana Central Elementary School, pinapahalagahan namin ang kahalagahan ng wikang Filipino bilang bahagi ng ating pagkakakilanlan at kultura. Sa asignaturang Filipino, tinuturuan ang mga mag-aaral na maging mahusay sa pagbasa, pagsulat, pakikinig, at pagsasalita. Sa pamamagitan ng mga kwento, tula, laro, at makabuluhang gawain, mas nagiging masaya at madali ang pagkatuto ng wika. Nilalayon naming hubugin ang kanilang kakayahang magpahayag ng damdamin at kaisipan sa paraang malinaw at epektibo. Sa tulong ng aming mga guro, ang mga bata ay natututo hindi lamang ng wika kundi ng pagmamahal sa ating kultura at bayan."
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf05"
+  },
+  "type": "core_subject",
+  "title": "core-subject-subjects-5",
+  "description": "Social Studies"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf06"
+  },
+  "type": "core_subject",
+  "title": "core-subject-description-5",
+  "description": "Sa Sta. Ana Central Elementary School, ang Araling Panlipunan ay nagtuturo sa mga mag-aaral ng kahalagahan ng kasaysayan, kultura, pamahalaan, at lipunan. Sa tulong ng makabuluhang aralin at aktibidad, natututo ang mga bata tungkol sa kanilang komunidad, bansa, at ang papel nila bilang mamamayan. Pinapalawak ng asignaturang ito ang kanilang pag-unawa sa mga isyung panlipunan at tinuturuan silang maging responsable, makatao, at makabansang indibidwal. Sa bawat aralin, hinihikayat namin ang mga mag-aaral na maging mapanuri, may malasakit, at aktibong kalahok sa pagbubuo ng mas maayos na lipunan."
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf07"
+  },
+  "type": "special_subject",
+  "title": "special-subject-header",
+  "description": "Special Subject"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf08"
+  },
+  "type": "special_subject",
+  "title": "special-subject-subjects-1",
+  "description": "Music"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf09"
+  },
+  "type": "special_subject",
+  "title": "special-subject-subjects-2",
+  "description": "Art"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf0a"
+  },
+  "type": "special_subject",
+  "title": "special-subject-subjects-3",
+  "description": "Physical Education"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf0b"
+  },
+  "type": "special_subject",
+  "title": "special-subject-subjects-4",
+  "description": "Information and Communication (ICT)"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf0c"
+  },
+  "type": "special_subject",
+  "title": "special-subject-subjects-5",
+  "description": "Technological Arts"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf0d"
+  },
+  "type": "special_subject",
+  "title": "special-subject-subjects-6",
+  "description": "Home Economics"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf0e"
+  },
+  "type": "extracurricular_activities",
+  "title": "extracurrilar-activities-header",
+  "description": "Extracurricular Activities and Clubs"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf0f"
+  },
+  "type": "extracurricular_activities",
+  "title": "extracurricular-activities-club-1",
+  "description": "Varsity Teams"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf10"
+  },
+  "type": "extracurricular_activities",
+  "title": "extracurricular-activities-club-2",
+  "description": "Interest Clubs"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf11"
+  },
+  "type": "extracurricular_activities",
+  "title": "extracurricular-activities-club-3",
+  "description": "Mentoring"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf12"
+  },
+  "type": "overview_content",
+  "title": "overview-header",
+  "description": "Overview"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf13"
+  },
+  "type": "overview_content",
+  "title": "overview-description",
+  "description": "Sta. Ana Central Elementary School is a respected public school known for its dedication to academic excellence and values-based education. Guided by the K to 12 Curriculum, the school nurtures young learners through quality instruction, committed teachers, and strong community support. It continues to produce well-rounded students who grow into responsible and active members of society."
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf14"
+  },
+  "type": "mission_content",
+  "title": "mission-header",
+  "description": "Mission Statement"
+},
+{
+  "_id": {
+    "$oid": "6830ba17a2a96a3c8c6cdf15"
+  },
+  "type": "mission_content",
+  "title": "mission-description",
+  "description": "Sta. Ana Central Elementary School is dedicated to nurturing academically competent, values-driven, and socially responsible learners through quality education anchored on the K to 12 Curriculum. We commit to delivering inclusive, innovative, and engaging instruction supported by modern teaching strategies, active community involvement, and a safe, caring learning environment.\n\nIn response to the evolving needs of the 21st century, the school strives to develop well-rounded pupils equipped with critical thinking, collaboration, communication, and compassion—preparing them to become active contributors to nation-building and lifelong learners in a rapidly changing world."
+},
+{
+  "_id": {
+    "$oid": "6830cd90a2a96a3c8c6cdf17"
+  },
+  "type": "grade_level",
+  "title": "Kinder",
+  "description": [
+    {
+      "subject": "Language and Literacy",
+      "detail": "Basic listening, speaking, and pre-reading/writing skills in the mother tongue."
+    },
+    {
+      "subject": "Mathematics",
+      "detail": "Introduction to numbers, shapes, patterns, and simple counting."
+    },
+    {
+      "subject": "Understanding the Environment",
+      "detail": "Basic awareness of nature, weather, and surroundings."
+    },
+    {
+      "subject": "Social and Emotional Development",
+      "detail": "Building confidence, cooperation, and social skills."
+    },
+    {
+      "subject": "Edukasyon sa Pagpapakatao",
+      "detail": "Learning values like respect, kindness, and responsibility."
+    },
+    {
+      "subject": "Physical Health and Motor Development",
+      "detail": "Developing movement and coordination through play."
+    },
+    {
+      "subject": "Creative Arts",
+      "detail": "Expressing creativity through music, drawing, and role-play."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6830cd90a2a96a3c8c6cdf18"
+  },
+  "type": "grade_level",
+  "title": "First Grade",
+  "description": [
+    {
+      "subject": "Mother Tongue",
+      "detail": "Language-based instruction in the child’s first language (e.g., Cebuano, Tagalog, etc.)."
+    },
+    {
+      "subject": "Filipino",
+      "detail": "Basic communication skills and understanding of Filipino culture."
+    },
+    {
+      "subject": "English",
+      "detail": "Foundational reading, writing, listening, and speaking."
+    },
+    {
+      "subject": "Mathematics",
+      "detail": "Basic numeracy, operations, and problem-solving."
+    },
+    {
+      "subject": "Araling Panlipunan",
+      "detail": "Understanding self, family, and community; basic history and geography."
+    },
+    {
+      "subject": "Edukasyon sa Pagpapakatao",
+      "detail": "Values education and character formation."
+    },
+    {
+      "subject": "MAPEH",
+      "detail": "Music, Arts, Physical Education, and Health."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6830cd90a2a96a3c8c6cdf19"
+  },
+  "type": "grade_level",
+  "title": "Second Grade",
+  "description": [
+    {
+      "subject": "Mother Tongue",
+      "detail": "Language-based instruction in the child’s first language (e.g., Cebuano, Tagalog, etc.)."
+    },
+    {
+      "subject": "Filipino",
+      "detail": "Basic communication skills and understanding of Filipino culture."
+    },
+    {
+      "subject": "English",
+      "detail": "Foundational reading, writing, listening, and speaking."
+    },
+    {
+      "subject": "Mathematics",
+      "detail": "Basic numeracy, operations, and problem-solving."
+    },
+    {
+      "subject": "Araling Panlipunan",
+      "detail": "Understanding self, family, and community; basic history and geography."
+    },
+    {
+      "subject": "Edukasyon sa Pagpapakatao",
+      "detail": "Values education and character formation."
+    },
+    {
+      "subject": "MAPEH",
+      "detail": "Music, Arts, Physical Education, and Health."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6830cd90a2a96a3c8c6cdf1a"
+  },
+  "type": "grade_level",
+  "title": "Third Grade",
+  "description": [
+    {
+      "subject": "Mother Tongue",
+      "detail": "Language-based instruction in the child’s first language (e.g., Cebuano, Tagalog, etc.)."
+    },
+    {
+      "subject": "Filipino",
+      "detail": "Basic communication skills and understanding of Filipino culture."
+    },
+    {
+      "subject": "English",
+      "detail": "Foundational reading, writing, listening, and speaking."
+    },
+    {
+      "subject": "Mathematics",
+      "detail": "Basic numeracy, operations, and problem-solving."
+    },
+    {
+      "subject": "Araling Panlipunan",
+      "detail": "Understanding self, family, and community; basic history and geography."
+    },
+    {
+      "subject": "Edukasyon sa Pagpapakatao",
+      "detail": "Values education and character formation."
+    },
+    {
+      "subject": "MAPEH",
+      "detail": "Music, Arts, Physical Education, and Health."
+    },
+    {
+      "subject": "Science",
+      "detail": "Observation, plants, animals, body parts, etc."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6830cd90a2a96a3c8c6cdf1b"
+  },
+  "type": "grade_level",
+  "title": "Fourth Grade",
+  "description": [
+    {
+      "subject": "Filipino",
+      "detail": "Language enrichment, grammar, reading comprehension, and writing."
+    },
+    {
+      "subject": "English",
+      "detail": "Advanced language skills, literature, grammar, writing, and reading."
+    },
+    {
+      "subject": "Mathematics",
+      "detail": "Fractions, geometry, measurement, decimals; basic algebraic concepts."
+    },
+    {
+      "subject": "Science",
+      "detail": "Earth, life, and physical science concepts; basic scientific investigation."
+    },
+    {
+      "subject": "Araling Panlipunan",
+      "detail": "Philippine history, government, geography, and culture."
+    },
+    {
+      "subject": "Edukasyon sa Pagpapakatao",
+      "detail": "Values, citizenship, and ethics."
+    },
+    {
+      "subject": "MAPEH",
+      "detail": "Continued development in Music, Arts, Physical Education, and Health."
+    },
+    {
+      "subject": "Edukasyong Pantahanan at Pangkabuhayan",
+      "detail": "Introduced in Grade 4."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6830cd90a2a96a3c8c6cdf1c"
+  },
+  "type": "grade_level",
+  "title": "Fifth Grade",
+  "description": [
+    {
+      "subject": "Filipino",
+      "detail": "Language enrichment, grammar, reading comprehension, and writing."
+    },
+    {
+      "subject": "English",
+      "detail": "Advanced language skills, literature, grammar, writing, and reading."
+    },
+    {
+      "subject": "Mathematics",
+      "detail": "Fractions, geometry, measurement, decimals; basic algebraic concepts."
+    },
+    {
+      "subject": "Science",
+      "detail": "Earth, life, and physical science concepts; basic scientific investigation."
+    },
+    {
+      "subject": "Araling Panlipunan",
+      "detail": "Philippine history, government, geography, and culture."
+    },
+    {
+      "subject": "Edukasyon sa Pagpapakatao",
+      "detail": "Values, citizenship, and ethics."
+    },
+    {
+      "subject": "MAPEH",
+      "detail": "Continued development in Music, Arts, Physical Education, and Health."
+    },
+    {
+      "subject": "Edukasyong Pantahanan at Pangkabuhayan",
+      "detail": "Includes Home Economics, Agriculture, ICT, and Entrepreneurship."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6830cd90a2a96a3c8c6cdf1d"
+  },
+  "type": "grade_level",
+  "title": "Sixth Grade",
+  "description": [
+    {
+      "subject": "Filipino",
+      "detail": "Language enrichment, grammar, reading comprehension, and writing."
+    },
+    {
+      "subject": "English",
+      "detail": "Advanced language skills, literature, grammar, writing, and reading."
+    },
+    {
+      "subject": "Mathematics",
+      "detail": "Fractions, geometry, measurement, decimals; basic algebraic concepts."
+    },
+    {
+      "subject": "Science",
+      "detail": "Earth, life, and physical science concepts; basic scientific investigation."
+    },
+    {
+      "subject": "Araling Panlipunan",
+      "detail": "Philippine history, government, geography, and culture."
+    },
+    {
+      "subject": "Edukasyon sa Pagpapakatao",
+      "detail": "Values, citizenship, and ethics."
+    },
+    {
+      "subject": "MAPEH",
+      "detail": "Continued development in Music, Arts, Physical Education, and Health."
+    },
+    {
+      "subject": "Edukasyong Pantahanan at Pangkabuhayan",
+      "detail": "Includes Home Economics, Agriculture, ICT, and Entrepreneurship."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "683327e36a2374101555cdde"
+  },
+  "type": "program",
+  "title": "program-top-img",
+  "img_path": "images/program-top-img.png"
+},
+{
+  "_id": {
+    "$oid": "683327e36a2374101555cddf"
+  },
+  "type": "program",
+  "title": "program-scrollable-1-img",
+  "img_path": "images/program-scrollable-1-img.png"
+},
+{
+  "_id": {
+    "$oid": "68332f4a6a2374101555cde1"
+  },
+  "type": "program",
+  "title": "program-deped-img",
+  "img_path": "images/program-deped-img.png"
+},
+{
+  "_id": {
+    "$oid": "6833332c6a2374101555cde5"
+  },
+  "type": "program",
+  "title": "program-scrollable-2-img",
+  "img_path": "images/program-scrollable-2-img.png"
+},
+{
+  "_id": {
+    "$oid": "6833332c6a2374101555cde6"
+  },
+  "type": "program",
+  "title": "program-scrollable-3-img",
+  "img_path": "images/program-scrollable-3-img.png"
+}]

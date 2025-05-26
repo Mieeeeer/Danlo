@@ -1,0 +1,162 @@
+[{
+  "_id": {
+    "$oid": "6830df6aa2a96a3c8c6cdf23"
+  },
+  "type": "admission",
+  "title": "admission-description",
+  "description": "In order to be admitted to Sta. Ana Central Elementary School, prospective pupils must meet the official enrollment requirements set by the Department of Education and the school administration. The enrollment process includes submission of necessary documents, registration, and orientation for both the pupil and their parent or guardian. Admission is subject to the availability of classrooms, teachers, and other school resources. Specific requirements for each grade level are determined by the school and may be updated based on DepEd guidelines. As of now, the general admission requirements are as follows:",
+  "school-level": "elementary"
+},
+{
+  "_id": {
+    "$oid": "6830df6aa2a96a3c8c6cdf25"
+  },
+  "type": "admission",
+  "title": "admission-kinder-description",
+  "description": "· Learner must be 5 years old on or before (specific date) of the year\n· Original and photocopy of PSO/NSO Birth Certificate\n· Accomplished Registration/Enrollment Form\n· 1x1 ID photo for School ID (2 copies)\n· Health and Immunization Records (if available)"
+},
+{
+  "_id": {
+    "$oid": "6830df6aa2a96a3c8c6cdf27"
+  },
+  "type": "admission",
+  "title": "admission-grade-1-description",
+  "description": "· Learner must be 6 years old on or before (specific date) of the year\n· Original and photocopy of PSO/NSO Birth Certificate\n· Report card or Kindergarten Certificate of Completion\n· Accomplished Registration/Enrollment Form\n· 1x1 ID photo for School ID (2 copies)"
+},
+{
+  "_id": {
+    "$oid": "6830df6aa2a96a3c8c6cdf29"
+  },
+  "type": "admission",
+  "title": "admission-grade-2-6-description",
+  "description": "· Previous Report Card (Form 138)\n· Accomplished Registration/Enrollment Form\n· Updated School ID or 1x1 ID photo (2 copies)\n· Clearance from class adviser (if required by school)"
+},
+{
+  "_id": {
+    "$oid": "6830df6aa2a96a3c8c6cdf2b"
+  },
+  "type": "admission",
+  "title": "admission-transferees-description",
+  "description": "· Original Report Card (Form 138) from the previous school\n· Certificate of Good Moral\n· SF9 and SF10 (Student Permanent Record)\n· Original and photocopy of PSA/NSO Birth Certificate\n· Accomplished Registration/Enrollment Form\n· 1x1 ID photo (2 copies)"
+},
+{
+  "_id": {
+    "$oid": "6830df6aa2a96a3c8c6cdf2e"
+  },
+  "type": "download-forms",
+  "title": "Registration Form",
+  "file_path": "forms/elementary/Registration-Form.pdf",
+  "school-level": "elementary"
+},
+{
+  "_id": {
+    "$oid": "6830df6aa2a96a3c8c6cdf2f"
+  },
+  "type": "download-forms",
+  "title": "Enrollment Form",
+  "file_path": "forms/elementary/Enrollment-Form.pdf",
+  "school-level": "elementary"
+},
+{
+  "_id": {
+    "$oid": "6830df6aa2a96a3c8c6cdf30"
+  },
+  "type": "download-forms",
+  "title": "School Referal Form",
+  "file_path": "forms/elementary/School-Referal-Form.pdf",
+  "school-level": "elementary"
+},
+{
+  "_id": {
+    "$oid": "6830df6aa2a96a3c8c6cdf31"
+  },
+  "type": "download-forms",
+  "title": "Document Request Form",
+  "file_path": "forms/elementary/Request-Form.pdf",
+  "school-level": "elementary"
+},
+{
+  "_id": {
+    "$oid": "6830e0e0a2a96a3c8c6cdf35"
+  },
+  "type": "admission",
+  "img_path": "images/Enrollment Process Elem.jpg",
+  "title": "admission-elem-img"
+},
+{
+  "_id": {
+    "$oid": "683270ddc52baa682d20fb60"
+  },
+  "type": "admission",
+  "title": "admission-description",
+  "description": "In order to be admitted to Sta. Ana National High School, prospective students must meet the official enrollment requirements set by the Department of Education and the school administration. The enrollment process includes submission of necessary documents, registration, and orientation for both the student and their parent or guardian. Admission is subject to the availability of classrooms, teachers, and other school resources. Specific requirements for each grade level are determined by the school and may be updated based on DepEd guidelines. As of now, the general admission requirements are as follows:",
+  "school-level": "highschool"
+},
+{
+  "_id": {
+    "$oid": "683275aec52baa682d20fb61"
+  },
+  "type": "admission",
+  "title": "admission-incomming-students-description",
+  "description": "· Report Card (Form 138)\n · Photocopy of PSA/NSO Birth Certificate (preferably from PSA)\n· Certificate of Good Moral Character\n· Completed Enrollment Form"
+},
+{
+  "_id": {
+    "$oid": "68327706c52baa682d20fb62"
+  },
+  "type": "admission",
+  "title": "Transferees-HS",
+  "description": "· Report Card (Form 138) from previous school\n· Photocopy of PSA/NSO Birth Certificate (preferably from PSA)\n· Certificate of Good Moral Character\n· SF9 and SF10 (Student Permanent Record)\n· 1x1 ID photo for School ID (2 copies)"
+},
+{
+  "_id": {
+    "$oid": "6832775fc52baa682d20fb63"
+  },
+  "type": "admission",
+  "title": "Continuing Students",
+  "description": "· Previous Report Card (Form 138)\n· Accomplished Registration/Enrollment Form\n· 1x1 ID photo for School ID (2 copies)\n· Clearance from class adviser"
+},
+{
+  "_id": {
+    "$oid": "68327806c52baa682d20fb64"
+  },
+  "type": "admission",
+  "img_path": "images/Enrollment Process Hs.png",
+  "title": "admission-hs-img"
+},
+{
+  "_id": {
+    "$oid": "68327a1bc52baa682d20fb65"
+  },
+  "type": "download-forms",
+  "title": "Registration Form",
+  "file_path": "forms/highschool/Registration-Form.pdf",
+  "school-level": "highschool"
+},
+{
+  "_id": {
+    "$oid": "68327a54c52baa682d20fb66"
+  },
+  "type": "download-forms",
+  "title": "Enrollment Form",
+  "file_path": "forms/highschool/Enrollment-Form.pdf",
+  "school-level": "highschool"
+},
+{
+  "_id": {
+    "$oid": "68327a84c52baa682d20fb67"
+  },
+  "type": "download-forms",
+  "title": "School Referal Form",
+  "file_path": "forms/highschool/School-Referal-Form.pdf",
+  "school-level": "highschool"
+},
+{
+  "_id": {
+    "$oid": "68327ab5c52baa682d20fb68"
+  },
+  "type": "download-forms",
+  "title": "Document Request Form",
+  "file_path": "forms/highschool/Request-Form.pdf",
+  "school-level": "highschool"
+}]

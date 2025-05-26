@@ -1,0 +1,136 @@
+[{
+  "_id": {
+    "$oid": "6833373235729222f528557f"
+  },
+  "question": "What are the requirements for enrolling my child at Sta. Ana National High School?",
+  "answer": "To enroll your child, you will need to complete and submit the required documents depending on their grade level. These usually include a PSA/NSO Birth Certificate, the most recent report card or Certificate of Completion, a fully accomplished Enrollment Form, and two 1x1 ID photos.\n\nFor transferees, additional documents such as the Certificate of Good Moral Character and student records (SF9 and SF10) from the previous school are required.\n\nIt is best to inquire at the school office to get a complete list and ensure all forms are properly filled out.",
+  "views": 3,
+  "published": true,
+  "createdAt": {
+    "$date": "2025-05-24T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "683337b035729222f5285583"
+  },
+  "question": "What grade levels are offered at Sta. Ana National School?",
+  "answer": "Sta. Ana National High School offers complete secondary education from Grade 7 to Grade 12.\n\nThe school follows the K to 12 Basic Education Curriculum provided by the Department of Education (DepEd), which includes core subjects like English, Mathematics, Science, Filipino, and Araling Panlipunan, as well as values education, music, arts, and physical education.\n\nEach grade level is designed to meet the developmental needs of learners and prepare them for the next stage of learning.",
+  "views": 2,
+  "published": true,
+  "createdAt": {
+    "$date": "2025-05-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68333c8b35729222f5285587"
+  },
+  "question": "When does enrollment usually begin?",
+  "answer": "Enrollment typically begins around late May or early June, but the exact dates can vary depending on the school year calendar issued by DepEd.\n\nThe school announces the start of enrollment through its bulletin board, official Facebook page (if available), or text messages to parents. Early enrollment is encouraged to help with classroom planning and sectioning.\n\nParents or guardians are advised to regularly check for announcements to avoid missing deadlines.",
+  "views": 1,
+  "published": true,
+  "createdAt": {
+    "$date": "2025-05-22T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68333cc435729222f528558b"
+  },
+  "question": "Is there a school uniform, and where can we get it?",
+  "answer": "Yes, Sta. Ana National High School requires students to wear a proper school uniform as part of the school’s dress code.\n\nThe uniform promotes discipline, unity, and school pride. Guidelines on the design and color of the uniform are shared during enrollment or orientation. Parents can purchase uniforms from local school supply stores or tailors recommended by the school.\n\nSome schools may also allow used uniforms in good condition to be reused or exchanged.",
+  "views": 1,
+  "published": true,
+  "createdAt": {
+    "$date": "2025-05-21T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68333d2735729222f528558f"
+  },
+  "question": "Does the school offer online or blended learning options?",
+  "answer": "Under normal conditions, Sta. Ana National High School conducts face-to-face classes.\n\nHowever, during special situations like health emergencies or typhoons, the school may shift to modular, online, or blended learning modalities, based on DepEd guidelines. If needed, learning materials such as printed modules or digital lessons are provided.\n\nThe school coordinates closely with parents to ensure students can continue learning at home when in-person classes are not possible.",
+  "views": 2,
+  "published": true,
+  "createdAt": {
+    "$date": "2025-05-20T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68333d5435729222f5285593"
+  },
+  "question": "What are the school hours for Sta. Ana National High School?",
+  "answer": "School hours typically run from 7:30 AM to 4:00 PM, Monday to Friday.\n\nExact class schedules may vary depending on the grade level and any adjustments made by the Department of Education.\n\nIt is advised to check with the class adviser for the official schedule each school year.",
+  "views": 1,
+  "published": true,
+  "createdAt": {
+    "$date": "2025-05-19T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68333d9235729222f5285597"
+  },
+  "question": "Are there extracurricular activities offered at the school?",
+  "answer": "Yes.\n\nSta. Ana National High School offers a variety of extracurricular activities including academic clubs, performing arts, sports, scouting (Boy Scouts and Girl Scouts), and student leadership programs.\n\nThese activities are designed to support the holistic development of learners beyond academics.",
+  "views": 16,
+  "published": true,
+  "createdAt": {
+    "$date": "2025-05-18T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68333db935729222f528559b"
+  },
+  "question": "How are students assessed throughout the school year?",
+  "answer": "Students are assessed through a combination of written tests, performance tasks, projects, and class participation.\n\nThe school follows the standards-based assessment system recommended by the Department of Education, which includes quarterly grades and formative evaluations to monitor learning progress.",
+  "views": 1,
+  "published": true,
+  "createdAt": {
+    "$date": "2025-05-17T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68333dd835729222f528559f"
+  },
+  "question": "What support does the school offer for students with learning difficulties?",
+  "answer": "Sta. Ana Nationa High School provides intervention programs and individualized support for learners who require assistance in their studies.\n\nTeachers may conduct remedial classes, coordinate with parents, or refer students to guidance personnel for further support as needed.",
+  "views": 1,
+  "published": true,
+  "createdAt": {
+    "$date": "2025-05-16T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68333df335729222f52855a3"
+  },
+  "question": "How can parents stay updated on school events and announcements?",
+  "answer": "Parents are encouraged to stay informed through official school memos, parent-teacher meetings, and the school’s bulletin board.\n\nIn some cases, announcements are also posted on the school’s official Facebook page or communicated through class advisers via SMS or messaging groups.",
+  "views": 1,
+  "published": true,
+  "createdAt": {
+    "$date": "2025-05-15T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68333e3135729222f52855a9"
+  },
+  "type": "faqs",
+  "title": "faqs-description",
+  "description": "Welcome to the FAQ section of Sta. Ana National High School! Here, you’ll find quick answers to common questions from parents, guardians, and students about enrollment, requirements, school policies, and more. If you need more help, feel free to contact the school directly or visit the school office during official hours."
+},
+{
+  "_id": {
+    "$oid": "68333e4935729222f52855ad"
+  },
+  "type": "faqs",
+  "title": "faqs-qna-img",
+  "img_path": "images/QnA.jpg"
+}]

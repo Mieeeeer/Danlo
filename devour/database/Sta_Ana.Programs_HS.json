@@ -1,0 +1,253 @@
+[{
+  "_id": {
+    "$oid": "6833798b35729222f52855ba"
+  },
+  "type": "program_intro",
+  "title": "program-header",
+  "description": "Why Study High School in Sta. Ana National?"
+},
+{
+  "_id": {
+    "$oid": "683379b335729222f52855be"
+  },
+  "type": "program_intro",
+  "title": "program-content",
+  "description": "Studying at Sta. Ana National High School offers students quality education in a well-established public institution known for its academic excellence, dedicated teachers, and diverse programs. With specialized tracks in both academic and technical-vocational fields, students can choose a path that suits their interests and future goals. The school also promotes values formation, leadership, and community involvement, all within a supportive and inclusive environment that welcomes learners from all backgrounds."
+},
+{
+  "_id": {
+    "$oid": "68338a8035729222f52855da"
+  },
+  "type": "programs",
+  "title": "junior-high",
+  "description": "Junior High Programs"
+},
+{
+  "_id": {
+    "$oid": "68338adc35729222f52855de"
+  },
+  "type": "programs",
+  "title": "junior-high-program-title",
+  "description": "Science, Technology, and Engineering (STE) Program"
+},
+{
+  "_id": {
+    "$oid": "68338b1835729222f52855e1"
+  },
+  "type": "programs",
+  "title": "junior-high-program-description",
+  "description": "Sta. Ana National High School (SANHS) offers a specialized Science, Technology, and Engineering (STE) program that emphasizes critical thinking, creativity, and a passion for learning. The program is designed to provide students with practical, hands-on experiences in science and technology. Through engaging activities, experiments, and projects, students gain a deeper understanding of scientific principles and technological innovations. The STE program not only enhances students' academic knowledge but also prepares them for future careers in fields such as engineering, research, and technology."
+},
+{
+  "_id": {
+    "$oid": "68338b4c35729222f52855e2"
+  },
+  "type": "programs",
+  "title": "senior-high",
+  "description": "Senior High Programs"
+},
+{
+  "_id": {
+    "$oid": "68338b8d35729222f52855e4"
+  },
+  "type": "track",
+  "track_key": "academic",
+  "title": "Academic Track",
+  "intro": "Designed for students aiming for higher education, this track offers specialized strands:"
+},
+{
+  "_id": {
+    "$oid": "68338c1b35729222f52855e6"
+  },
+  "type": "strand",
+  "track_key": "academic",
+  "strand_key": "abm",
+  "title": "Accountancy, Business, and Management (ABM)",
+  "description": "The ABM strand is designed for students interested in financial management, business operations, and entrepreneurship. It prepares them for careers in accounting, business leadership, and starting their own ventures. Students explore subjects like financial accounting, economics, and business law, equipping them with practical skills for the business world."
+},
+{
+  "_id": {
+    "$oid": "683390e935729222f52855e7"
+  },
+  "type": "strand",
+  "track_key": "academic",
+  "strand_key": "humms",
+  "title": "Humanities and Social Sciences (HUMSS)",
+  "description": "The HUMSS strand is ideal for students who aspire to work in fields like education, law, psychology, and social services. This strand focuses on subjects that promote critical thinking, communication, and a deeper understanding of human behavior and society, preparing students for careers in teaching, counseling, public administration, and law."
+},
+{
+  "_id": {
+    "$oid": "6833912f35729222f52855e8"
+  },
+  "type": "strand",
+  "track_key": "academic",
+  "strand_key": "stem",
+  "title": "Science, Technology, Engineering, and Mathematics (STEM)",
+  "description": "STEM is for students who are interested in careers in engineering, medicine, technology, and research. The curriculum emphasizes scientific principles, advanced mathematics, and technological innovations, preparing students for higher education and professions in fields like engineering, healthcare, computer science, and environmental science."
+},
+{
+  "_id": {
+    "$oid": "6833919a35729222f52855e9"
+  },
+  "type": "strand",
+  "track_key": "academic",
+  "strand_key": "gas",
+  "title": "General Academic Strand (GAS)",
+  "description": "The GAS strand offers a flexible curriculum, making it ideal for students with varied interests. It allows students to explore subjects from different fields, including business, science, and the arts, giving them a broader perspective and the freedom to choose their career path based on their passions and strengths."
+},
+{
+  "_id": {
+    "$oid": "6833925935729222f52855ea"
+  },
+  "type": "track",
+  "track_key": "tvl",
+  "title": "Technical-Vocational-Livelihood (TVL) Track",
+  "intro": "Equips students with practical skills for immediate employment or entrepreneurship. Strands under this track include:"
+},
+{
+  "_id": {
+    "$oid": "6833935a35729222f52855eb"
+  },
+  "type": "strand",
+  "track_key": "tvl",
+  "strand_key": "home-eco",
+  "title": "Home Economics",
+  "description": "The Home Economics track equips students with practical skills in Bread and Pastry Production, Cookery, and Food and Beverage Services. Through hands-on experience, students learn culinary techniques, food science, and hospitality management. This track prepares students for careers in the food industry, such as chefs, pastry chefs, and food service managers, while also fostering entrepreneurial opportunities in the food business."
+},
+{
+  "_id": {
+    "$oid": "6833938835729222f52855ec"
+  },
+  "type": "strand",
+  "track_key": "tvl",
+  "strand_key": "ict",
+  "title": "Information and Communications Technology (ICT)",
+  "description": "The Industrial Arts track offers hands-on training in automotive servicing, electrical installation, and other practical trades. Students develop skills in machinery repair, electrical work, and construction, preparing them for careers as automotive technicians, electricians, and skilled laborers. The track emphasizes precision, safety, and technical expertise in various trades."
+},
+{
+  "_id": {
+    "$oid": "683393b435729222f52855ed"
+  },
+  "type": "strand",
+  "track_key": "tvl",
+  "strand_key": "ind-art",
+  "title": "Industrial Arts",
+  "description": "The Industrial Arts track offers hands-on training in automotive servicing, electrical installation, and other practical trades. Students develop skills in machinery repair, electrical work, and construction, preparing them for careers as automotive technicians, electricians, and skilled laborers. The track emphasizes precision, safety, and technical expertise in various trades."
+},
+{
+  "_id": {
+    "$oid": "683393d635729222f52855ee"
+  },
+  "type": "strand",
+  "track_key": "tvl",
+  "strand_key": "agri-fish-art",
+  "title": "Agri-Fishery Arts",
+  "description": "The Agri-Fishery Arts track provides students with knowledge in agriculture and fisheries, focusing on sustainable practices in farming and fishing. Students learn how to manage agricultural resources and fishery operations, preparing them for careers in farming, aquaculture, and environmental conservation."
+},
+{
+  "_id": {
+    "$oid": "6833947535729222f52855ef"
+  },
+  "type": "programs",
+  "title": "extra-cur",
+  "description": "Extracurricular Activities and Clubs"
+},
+{
+  "_id": {
+    "$oid": "6833973435729222f52855f1"
+  },
+  "type": "extracurricular",
+  "description": "Performing Arts Guild",
+  "order": 1
+},
+{
+  "_id": {
+    "$oid": "6833973c35729222f52855f3"
+  },
+  "type": "extracurricular",
+  "description": "Dancesport Team",
+  "order": 2
+},
+{
+  "_id": {
+    "$oid": "6833974335729222f52855f5"
+  },
+  "type": "extracurricular",
+  "description": "Project W.A.T.C.H.",
+  "order": 3
+},
+{
+  "_id": {
+    "$oid": "6833974d35729222f52855f7"
+  },
+  "type": "extracurricular",
+  "description": "Boy Scouts of the Philippines (BSP)",
+  "order": 4
+},
+{
+  "_id": {
+    "$oid": "6833975535729222f52855f9"
+  },
+  "type": "extracurricular",
+  "description": "Girl Scouts of the Philippines (GSP)",
+  "order": 5
+},
+{
+  "_id": {
+    "$oid": "6833975d35729222f52855fb"
+  },
+  "type": "extracurricular",
+  "description": "Academic and Interest-Based Clubs",
+  "order": 6
+},
+{
+  "_id": {
+    "$oid": "68339e0b35729222f5285605"
+  },
+  "type": "mission_content",
+  "title": "mission-description",
+  "description": "Sta. Ana National High School is committed to developing academically excellent, values-oriented, and globally competitive learners through quality secondary education grounded in the K to 12 Curriculum. The school embraces inclusive and innovative teaching practices, empowering students through dynamic instruction, technology integration, and strong partnerships with families and the community in a safe and supportive environment.\n \nIn response to the evolving needs of the 21st century, the school strives to develop well-rounded pupils equipped with critical thinking, collaboration, communication, and compassion—preparing them to become active contributors to nation-building and lifelong learners in a rapidly changing world."
+},
+{
+  "_id": {
+    "$oid": "6833a03435729222f5285606"
+  },
+  "type": "overview_content",
+  "title": "overview-description",
+  "description": "Sta. Ana National High School is a leading public secondary school in Davao City, recognized for its commitment to academic excellence, character formation, and inclusive education. Anchored in the K to 12 Curriculum, the school provides a supportive and engaging learning environment that develops students' knowledge, skills, and values. With dedicated educators, strong leadership, and active community involvement, SANHS continues to shape learners into responsible, resilient, and future-ready citizens."
+},
+{
+  "_id": {
+    "$oid": "6833a1ff35729222f5285607"
+  },
+  "type": "special_program",
+  "program_key": "spfl",
+  "title": "Special Program in Foreign Language (SPFL)",
+  "description": "The Special Program in Foreign Language at Sta. Ana National High School offers Japanese and Korean language courses aimed at fostering global awareness and cross-cultural communication. Through engaging lessons and cultural immersion activities, students gain practical language skills that prepare them for opportunities in international education, travel, and future careers. This program is open to incoming Grade 7 students who meet the eligibility criteria—having a general average of 85% or higher, with no grade lower than 85% in any subject. SPFL not only enhances students’ linguistic competence but also promotes appreciation for cultural diversity and global citizenship."
+},
+{
+  "_id": {
+    "$oid": "6833a4d535729222f5285608"
+  },
+  "type": "special_program",
+  "program_key": "sped",
+  "title": "Special Education (SPED) Program",
+  "description": "The SPED Program at SANHS is designed to meet the individual learning needs of students with physical, intellectual, and developmental challenges. Through inclusive education strategies, differentiated instruction, and support services, the program ensures that every learner has access to quality education in a nurturing environment. Skilled SPED teachers work closely with students, parents, and support staff to promote academic progress, life skills development, and social integration. This program reflects the school’s commitment to equity and respect for all learners, regardless of ability."
+},
+{
+  "_id": {
+    "$oid": "6833a4f735729222f5285609"
+  },
+  "type": "special_program",
+  "program_key": "mwsp",
+  "title": "Modified Work and Study Program (MWSP)",
+  "description": "Also known as the Sunday School Program, the Modified Work and Study Program provides an alternative learning setup for students who are unable to attend regular weekday classes due to work or personal responsibilities. Classes are held on weekends, offering a flexible schedule that allows learners to continue their education while supporting their families or managing other obligations. MWSP emphasizes discipline, time management, and resilience, enabling students to pursue their academic goals without compromising their personal circumstances. The program underscores SANHS's dedication to accessible and adaptive education for all."
+},
+{
+  "_id": {
+    "$oid": "6833b34b35729222f5285610"
+  },
+  "type": "program",
+  "title": "program-top-img",
+  "img_path": "images/program-top-img.png"
+}]

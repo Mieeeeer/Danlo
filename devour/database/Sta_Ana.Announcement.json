@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "6831fce82a3e8bca4c6697f5"
+  },
+  "type": "event",
+  "title": "LE Presentation",
+  "date": "2025-05-26",
+  "school-level": "elementary"
+},
+{
+  "_id": {
+    "$oid": "68320f331d31b2f8cb6c8687"
+  },
+  "type": "event",
+  "title": "Manguli sa Province",
+  "date": "2025-05-27",
+  "school-level": "elementary"
+},
+{
+  "_id": {
+    "$oid": "68321b1e1d31b2f8cb6c8689"
+  },
+  "type": "important-dates",
+  "month": "JUNE",
+  "day": "02",
+  "label": "ENROLLMENT",
+  "school-level": "elementary"
+},
+{
+  "_id": {
+    "$oid": "68321b5c1d31b2f8cb6c868c"
+  },
+  "type": "important-dates",
+  "month": "JUNE",
+  "day": "09",
+  "label": "START OF CLASSES",
+  "school-level": "elementary"
+},
+{
+  "_id": {
+    "$oid": "68321b7b1d31b2f8cb6c868e"
+  },
+  "type": "important-dates",
+  "month": "APRIL",
+  "day": "06",
+  "label": "END OF CLASSES",
+  "school-level": "elementary"
+},
+{
+  "_id": {
+    "$oid": "68322fcfc52baa682d20fb57"
+  },
+  "type": "event",
+  "title": "Manguli sa Province",
+  "date": "2025-05-27",
+  "school-level": "highschool"
+},
+{
+  "_id": {
+    "$oid": "68322febc52baa682d20fb59"
+  },
+  "type": "event",
+  "title": "LE Presentation",
+  "date": "2025-05-26",
+  "school-level": "highschool"
+},
+{
+  "_id": {
+    "$oid": "68323052c52baa682d20fb5b"
+  },
+  "type": "important-dates",
+  "month": "JUNE",
+  "day": "02",
+  "label": "ENROLLMENT",
+  "school-level": "highschool"
+},
+{
+  "_id": {
+    "$oid": "6832308fc52baa682d20fb5c"
+  },
+  "type": "important-dates",
+  "month": "JUNE",
+  "day": "16",
+  "label": "START OF CLASSES",
+  "school-level": "highschool"
+},
+{
+  "_id": {
+    "$oid": "683230cdc52baa682d20fb5d"
+  },
+  "type": "important-dates",
+  "month": "APRIL",
+  "day": "13",
+  "label": "END OF CLASSES",
+  "school-level": "highschool"
+}]
