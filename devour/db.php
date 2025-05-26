@@ -19,4 +19,6 @@
     $FAQs_Submissions = $db->FAQs_Submissions;
     $FAQs_Submissions_HS = $db->FAQs_Submissions_HS;
     $FAQs_HS = $db->FAQs_HS;
+    $Programs = $db->Programs_Elem;
+    $Programs_HS = $db->Programs_HS;
 ?>

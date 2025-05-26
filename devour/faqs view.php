@@ -42,7 +42,7 @@ $FAQs->updateOne(['_id' => $objectId], ['$inc' => ['views' => 1]]);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sta. Ana School - FAQ</title>
+    <title>Sta. Ana Central Elementary School - View FAQs</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="elem">
@@ -71,7 +71,7 @@ $FAQs->updateOne(['_id' => $objectId], ['$inc' => ['views' => 1]]);
             <li><a href="welcome elem.php">Welcome</a></li>
             <li><a href="about us elem.php">About Us</a></li>
             <li><a href="org chart elem.php">Organizational Chart</a></li>
-            <li><a href="">Programs Offered</a></li>
+            <li><a href="programs offered elem.php">Programs Offered</a></li>
             <li><a href="admission elem.php">Admission</a></li>
             <li><a href="announcement elem.php">Announcement</a></li>
             <li><a href="faqs all elem.php">FAQs</a></li>

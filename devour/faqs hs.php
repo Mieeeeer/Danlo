@@ -4,7 +4,7 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Sta. Ana School</title>
+        <title>Sta. Ana National High School - FAQs</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -32,7 +32,7 @@
                 <li><a href="welcome hs.php">Welcome</a></li>
                 <li><a href="about us hs.php">About Us</a></li>
                 <li><a href="org chart hs.php">Organizational Chart</a></li>
-                <li><a href="">Programs Offered</a></li>
+                <li><a href="programs offered hs.php">Programs Offered</a></li>
                 <li><a href="admission hs.php">Admission</a></li>
                 <li><a href="announcement hs.php">Announcement</a></li>
                 <li><a href="faqs hs.php">FAQs</a></li>

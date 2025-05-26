@@ -1483,3 +1483,411 @@ nav a {
 
 
 
+
+
+
+.programs-offered-section h2 {
+  font-size: 32px;
+  color: #E31818;
+  margin-bottom: 10px;
+}
+
+.hs .programs-offered-section h2 {
+  font-size: 32px;
+  color: #0A771A;
+  margin-bottom: 10px;
+}
+
+.program-intro-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.program-text {
+  flex: 1;
+}
+
+.program-text h2 {
+  font-size: 32px;
+  color: #E31818;
+  margin-bottom: 10px;
+}
+
+.hs .program-text h2 {
+  font-size: 32px;
+  color: #0A771A;
+  margin-bottom: 10px;
+}
+
+.program-text p {
+  line-height: 1.6;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.program-image {
+  flex-shrink: 0;
+  width: 35%;
+}
+
+.program-image img {
+  width: 100%;
+  height: 350px;
+}
+
+.programs-offered-section .red-box {
+  background-color: #C72020;
+  color: white;
+  padding: 10px 15px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.hs .programs-offered-section .red-box {
+  background-color: #0A771A;
+  color: white;
+  padding: 10px 15px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.programs-offered-section .subject-header{
+  font-size: 28px;
+  font-weight: bold;
+  color: #E31818;
+}
+
+.hs .programs-offered-section .subject-header{
+  font-size: 28px;
+  font-weight: bold;
+  color: #0A771A;
+}
+
+.strand-title {
+  font-size: 25px;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.track-title {
+  margin-top: 3rem;
+}
+
+.hs .programs-offered-section .divider {
+  background-color: #0A771A;
+  margin-bottom: 3rem;
+}
+
+.strand-description {
+  font-size: 20px;
+  margin-left: 8rem;
+  margin-bottom: 2rem;
+}
+
+.hs .programs-offered-section .extracurricular-flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 8px;
+    margin-top: 10px;
+}
+
+.hs .programs-offered-section .activity-item {
+    flex: 1 1 45%; /* Two columns on larger screens */
+    max-width: 40%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.hs .programs-offered-section .school-activity-slideshow-wrapper {
+  margin-top: 5rem;
+}
+
+.programs-offered-section .subject-description{
+  margin-top: -15px;
+}
+
+.programs-offered-section .divider {
+  width: 1500px;
+  height: 1px;
+  background-color: #C72020;
+  border-radius: 9999px; /* Fully round ends */
+  margin: 20px auto; 
+}
+
+.programs-offered-section .special-extra-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.programs-offered-section .special-column,
+.programs-offered-section .extracurricular-column {
+  flex: 1 1 45%;
+}
+
+.programs-offered-section .special-column ul,
+.programs-offered-section .extracurricular-column ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.programs-offered-section .special-column li,
+.programs-offered-section .extracurricular-column li {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.programs-offered-section .school-activity-slideshow-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: auto;
+}
+
+.programs-offered-section .school-activity-slideshow {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: 100%;
+  height: 250px;
+}
+
+.programs-offered-section .slide-img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+
+.programs-offered-section .slide-dots {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.programs-offered-section .slide-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF80;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.programs-offered-section .slide-dot.active {
+  background: #931515;
+}
+
+.programs-offered-section .bottom-nav {
+  background-color: #D9D9D9;
+  padding-top: 3rem;
+  max-width: 100%;
+}
+
+.programs-offered-section .button-box button {
+  display: inline-flex;
+  gap: 5px;
+  background: #931515;
+  padding: 0 1rem;
+
+}
+
+.hs .programs-offered-section .bottom-nav-container {
+  background: #ADADAD;
+  padding: 0 30px 1px;
+  border-top: 4px solid #0A771A;
+}
+
+.programs-offered-section .tab-button {
+  flex: 1;
+  background: #931515;
+  border: none;
+  height: 45px;
+  border-radius: 3px 3px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;;
+}
+
+.hs .programs-offered-section .tab-button {
+  background: #004028;
+}
+
+.programs-offered-section .tab-button:last-child {
+  border-right: none;
+}
+
+.programs-offered-section .tab-button.active {
+  color: #FFAE00;
+}
+
+.programs-offered-section .tab-button:hover:not(.active) {
+  color: #FFAE00;
+}
+
+.programs-offered-section .content-body {
+  background: #A4A4A4;
+  border-top: 4px solid #d40000;
+  color: #000000;
+  padding: 0 30px 5px;
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.programs-offered-section .content-body p {
+  margin-bottom: 20px;
+}
+
+.programs-offered-section .content-body p:last-child {
+  margin-bottom: 20px;
+}
+
+/* Curriculum Grid Styling */
+.programs-offered-section .curriculum-content {
+  border-top: 4px solid #d40000;
+}
+
+.programs-offered-section .curriculum-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 0;
+  margin-bottom: 30px;
+}
+
+.programs-offered-section .grade-card {
+  padding: 25px;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.programs-offered-section .grade-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Grade-specific colors */
+.programs-offered-section .grade-card.kinder {
+  background: linear-gradient(180deg, #931515, #FFE990, #FFE990);
+}
+
+.programs-offered-section .grade-card.first-grade {
+  background: linear-gradient(180deg, #931515, #FFA46C, #FFA46C);
+}
+
+.programs-offered-section .grade-card.second-grade {
+  background: linear-gradient(180deg, #931515, #FF9F9F, #FF9F9F);
+}
+
+.programs-offered-section .grade-card.third-grade {
+  background: linear-gradient(180deg, #931515, #FFA5DC, #FFA5DC);
+}
+
+.programs-offered-section .grade-card.fourth-grade {
+  background: linear-gradient(180deg, #931515, #95A8FF, #95A8FF);
+}
+
+.programs-offered-section .grade-card.fifth-grade {
+  background: linear-gradient(180deg, #931515, #ECFF9F, #ECFF9F);
+}
+
+.programs-offered-section .grade-card.sixth-grade {
+  background: linear-gradient(180deg, #931515, #D9D9D9, #D9D9D9);
+}
+
+.programs-offered-section .grade-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 15px;
+}
+
+.programs-offered-section .subject-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.programs-offered-section .subject-item {
+  margin-bottom: 15px;
+  padding: 5px 0;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.programs-offered-section .subject-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.programs-offered-section .subject-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 100px;
+}
+
+.programs-offered-section .subject-detail {
+  color: #000000;
+}
+
+.programs-offered-section .deped-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: auto;
+  padding: 20px;
+  background: #931515;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.programs-offered-section .deped-image-container img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.hs .programs-offered-section .bottom-nav-container h3 {
+  font-size: 20px;
+}
+
+.hs .programs-offered-section #curriculum .bottom-nav-container p {
+  padding-left: 4rem;
+}
+
+
+
+
+
+
+
+
+
